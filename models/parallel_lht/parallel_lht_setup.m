@@ -7,7 +7,7 @@ imtool close all;
 hdlset_param(bdroot, 'GenerateValidationModel', 'on');
 
 %% Test Initialisation
-load('720p_BaseTest.mat')
+load('1080p_BaseTest.mat')
 
 Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
     [bt.height, bt.width]));
