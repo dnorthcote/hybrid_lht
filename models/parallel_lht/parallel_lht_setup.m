@@ -7,9 +7,9 @@ imtool close all;
 hdlset_param(bdroot, 'GenerateValidationModel', 'on');
 
 %% Test Initialisation
-load('240p_BaseTest.mat')
+load('720p_BaseTest.mat')
 
-Y = double(imresize(rgb2gray(imread('peppers.png')),...
+Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
     [bt.height, bt.width]));
 
 bt.theta = 0:1:179; % Do not change (no support provided)
@@ -20,9 +20,9 @@ bt.maxTheta = bt.theta(end);
 %%
 % Apply the Sobel operators to the greyscale image to obtain the binary
 % edge image and gradient orientation.
-SobelThreshold = 60;
+SobelThreshold = 30;
 [edge, Gdir] = Sobel(Y, SobelThreshold);
 
 %%
 % Set input image
-bt.inputImage = fi(edge, 0, 1, 0);
+bt.inputImage = uint8(edge);
