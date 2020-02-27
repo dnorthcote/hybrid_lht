@@ -9,8 +9,8 @@ sinQ = double(fi(sin(deg2rad(bt.theta)), 1, bt.paramWord, bt.paramWord-2));
 
 for y = 1:bt.height
     for x = 1:bt.width
-        yTemp = y - bt.height/2 -1;
-        xTemp = x - bt.width/2 -1;
+        yTemp = y - floor(bt.height/2) -1;
+        xTemp = x - floor(bt.width/2) -1;
         Hparam(y, x, :) = round(round(xTemp*cosQ) + round(yTemp*sinQ) + bt.maxRho);
     end
 end

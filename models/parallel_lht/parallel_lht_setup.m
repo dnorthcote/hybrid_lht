@@ -1,8 +1,12 @@
+%% Clean up
+clear;
+close all;
+
 %% Clean up workspace before running
 hdlset_param(bdroot, 'GenerateValidationModel', 'on');
 
 %% Test Initialisation
-load('1080p_BaseTest.mat')
+load('333_Zhou_BaseTest.mat')
 
 Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
     [bt.height, bt.width]));
