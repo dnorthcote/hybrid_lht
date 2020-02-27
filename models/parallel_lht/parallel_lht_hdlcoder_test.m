@@ -3,12 +3,11 @@ clear;
 close all;
 
 %% Setup the names of tests we are going to complete
-name = {'333_Zhou', '240p'};
+name = {'1080p', '720p', '768p', '480p', '512_Chen', '333_Zhou', '240p'};
 status = ones(1, length(name)); % status vector all set to one which indicates fail.
 
 %% Load a test image
-I = {imread('brick_wall.jpg'), imread('circle_steps_twist.jpg')};
-img_status = ones(1, length(I)); % status vector all set to one which indicates fail.
+I = imread('brick_wall.jpg');
 
 %% Open the model
 open_system('parallel_lht');
@@ -26,7 +25,7 @@ for name_idx = 1:length(name)
     load([name{name_idx}, '_BaseTest.mat']);
 
     % Image Initialisation
-    Y = double(imresize(rgb2gray(I{img_idx}), [bt.height, bt.width]));
+    Y = double(imresize(rgb2gray(I), [bt.height, bt.width]));
 
     % Apply the Sobel operators to the greyscale image to obtain the binary
     % edge image and gradient orientation.
