@@ -27,7 +27,7 @@ subflag = ~mod(bt.nTheta/L, 2);
 
 for y = 1:bt.height
     for x = 1:bt.width
-        idx = floor(Gdir(y, x));
+        idx = Gdir(y, x);
         yTemp = y - bt.height/2 -1;
         xTemp = x - bt.width/2 -1;
         
@@ -44,9 +44,11 @@ for y = 1:bt.height
             if i_temp < 0
                 i_temp = i_temp + bt.nTheta;
             end
-            if i_temp > bt.maxTheta
+            if i_temp >= bt.nTheta
                 i_temp = i_temp - bt.nTheta;
             end
+            
+            i_temp_param(y, x, j) = i_temp;
 
             % Obtain the value of theta relative to our temporary index
             theta_i = i_temp;

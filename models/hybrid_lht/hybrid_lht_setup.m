@@ -4,6 +4,7 @@ close all;
 
 %% Test Initialisation
 load('600_Elhossini_BaseTest.mat')
+%load('240p_BaseTest.mat')
 
 Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
     [bt.height, bt.width]));
@@ -13,6 +14,9 @@ Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
 % edge image and gradient orientation.
 SobelThreshold = 30;
 [edge, Gdir] = Sobel(Y, SobelThreshold);
+
+%
+Gdir = round(Gdir/bt.deltaTheta);
 
 %%
 % Set input image
