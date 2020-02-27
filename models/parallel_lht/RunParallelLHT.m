@@ -1,6 +1,4 @@
 function RunParallelLHT(bt)
-%% Turn Validation Model on
-% hdlset_param(bdroot, 'GenerateValidationModel', 'on');
 
 % Squash some bugs and override the model (still messy)
 if ceil(log2((bt.maxRho*2))) <= 9

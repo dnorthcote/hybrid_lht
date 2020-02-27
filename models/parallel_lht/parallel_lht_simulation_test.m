@@ -3,7 +3,7 @@ clear;
 close all;
 
 %% Setup the names of tests we are going to complete
-name = {'1080p', '1024p', '720p', '768p', '480p', '512_Chen', '333_Zhou' '240p'};
+name = {'1080p', '720p', '768p', '480p', '512_Chen', '333_Zhou', '240p'};
 status = ones(1, length(name)); % status vector all set to one which indicates fail.
 
 %% Load a test image
