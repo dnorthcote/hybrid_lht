@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 27 21:38:35 2020
+# Process ID: 51852
+# Current directory: C:/hybrid_lht/models/parallel_lht/hdl_prj_1080p/vivado_prj/Parallel_LHT_vivado.runs/synth_1
+# Command line: vivado.exe -log Parallel_LHT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Parallel_LHT.tcl
+# Log file: C:/hybrid_lht/models/parallel_lht/hdl_prj_1080p/vivado_prj/Parallel_LHT_vivado.runs/synth_1/Parallel_LHT.vds
+# Journal file: C:/hybrid_lht/models/parallel_lht/hdl_prj_1080p/vivado_prj/Parallel_LHT_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Parallel_LHT.tcl -notrace

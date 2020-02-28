@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 28 20:55:20 2020
+# Process ID: 34808
+# Current directory: C:/Vision/hdl_prj_1080p/vivado_prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent59980 C:\Vision\hdl_prj_1080p\vivado_prj\Parallel_LHT_vivado.xpr
+# Log file: C:/Vision/hdl_prj_1080p/vivado_prj/vivado.log
+# Journal file: C:/Vision/hdl_prj_1080p/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui

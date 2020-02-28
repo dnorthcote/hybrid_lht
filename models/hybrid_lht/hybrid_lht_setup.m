@@ -3,7 +3,7 @@ clear;
 close all;
 
 %% Test Initialisation
-% load('1080p_BaseTest.mat')
+load('1080p_BaseTest.mat')
 % load('720p_BaseTest.mat')
 % load('768p_BaseTest.mat')
 % load('768_Lu_BaseTest.mat')
@@ -11,9 +11,9 @@ close all;
 % load('512_Chen_BaseTest.mat')
 % load('480p_BaseTest.mat')
 % load('333_Zhou_BaseTest.mat')
-load('240p_BaseTest.mat')
+% load('240p_BaseTest.mat')
 
-Y = double(imresize(rgb2gray(imread('dirty_window.jpg')),...
+Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
     [bt.height, bt.width]));
 
 %%

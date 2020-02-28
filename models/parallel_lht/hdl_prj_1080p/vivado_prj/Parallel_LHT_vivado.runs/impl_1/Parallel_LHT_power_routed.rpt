@@ -1,0 +1,353 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date             : Thu Feb 27 21:49:14 2020
+| Host             : eee-bumblebee running 64-bit major release  (build 9200)
+| Command          : report_power -file Parallel_LHT_power_routed.rpt -pb Parallel_LHT_power_summary_routed.pb -rpx Parallel_LHT_power_routed.rpx
+| Design           : Parallel_LHT
+| Device           : xczu7ev-ffvc1156-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 1.881        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.281        |
+| Device Static (W)        | 0.600        |
+| Effective TJA (C/W)      | 1.0          |
+| Max Ambient (C)          | 98.2         |
+| Junction Temperature (C) | 26.8         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.046 |        3 |       --- |             --- |
+| CLB Logic      |     0.151 |    26881 |       --- |             --- |
+|   LUT as Logic |     0.144 |    15260 |    230400 |            6.62 |
+|   Register     |     0.004 |     7741 |    460800 |            1.68 |
+|   CARRY8       |     0.003 |      360 |     28800 |            1.25 |
+|   BUFG         |    <0.001 |        1 |        64 |            1.56 |
+|   Others       |     0.000 |      727 |       --- |             --- |
+|   F7/F8 Muxes  |     0.000 |      396 |    230400 |            0.17 |
+| Signals        |     0.232 |    26715 |       --- |             --- |
+| Block RAM      |     0.821 |      270 |       312 |           86.54 |
+| DSPs           |     0.031 |       92 |      1728 |            5.32 |
+| Static Power   |     0.600 |          |           |                 |
+| Total          |     1.881 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------------+-------------+-----------+-------------+------------+
+| Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------------+-------------+-----------+-------------+------------+
+| Vccint          |       0.850 |     1.536 |       1.392 |      0.144 |
+| Vccint_io       |       0.850 |     0.070 |       0.000 |      0.070 |
+| Vccbram         |       0.850 |     0.117 |       0.115 |      0.002 |
+| Vccaux          |       1.800 |     0.148 |       0.000 |      0.148 |
+| Vccaux_io       |       1.800 |     0.055 |       0.000 |      0.055 |
+| Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18          |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |
+| VCC_PSINTFP     |       0.850 |     0.000 |       0.000 |      0.000 |
+| VCC_PSINTLP     |       0.850 |     0.005 |       0.000 |      0.005 |
+| VPS_MGTRAVCC    |       0.850 |     0.000 |       0.000 |      0.000 |
+| VCC_PSINTFP_DDR |       0.850 |     0.000 |       0.000 |      0.000 |
+| VCC_PSPLL       |       1.200 |     0.002 |       0.000 |      0.002 |
+| VPS_MGTRAVTT    |       1.800 |     0.000 |       0.000 |      0.000 |
+| VCCO_PSDDR_504  |       1.200 |     0.000 |       0.000 |      0.000 |
+| VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |
+| VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |
+| VCC_PSDDR_PLL   |       1.800 |     0.000 |       0.000 |      0.000 |
+| VCCO_PSIO0_500  |       3.300 |     0.000 |       0.000 |      0.000 |
+| VCCO_PSIO1_501  |       3.300 |     0.000 |       0.000 |      0.000 |
+| VCCO_PSIO2_502  |       3.300 |     0.000 |       0.000 |      0.000 |
+| VCCO_PSIO3_503  |       3.300 |     0.000 |       0.000 |      0.000 |
+| VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |
+| VCCINT_VCU      |       0.900 |     0.026 |       0.000 |      0.026 |
+| MGTAVcc         |       0.900 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt         |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux       |       1.800 |     0.000 |       0.000 |      0.000 |
++-----------------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                                                     |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                               |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                                                            |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                            |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                   |                                                                                                            |
+|                             |            |                                                |                                                                                                            |
+| Overall confidence level    | Medium     |                                                |                                                                                                            |
++-----------------------------+------------+------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 1.5                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+| MWCLK | clk    |             6.7 |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------------+-----------+
+| Name                                      | Power (W) |
++-------------------------------------------+-----------+
+| Parallel_LHT                              |     1.281 |
+|   u_Parallel_LHT_Accumulator              |     1.142 |
+|     u_Accumulator_with_Switches           |     1.141 |
+|       GEN_LABEL[0].u_Accumulator          |     0.007 |
+|       GEN_LABEL[100].u_Accumulator        |     0.006 |
+|       GEN_LABEL[101].u_Accumulator        |     0.006 |
+|       GEN_LABEL[102].u_Accumulator        |     0.006 |
+|       GEN_LABEL[103].u_Accumulator        |     0.006 |
+|       GEN_LABEL[104].u_Accumulator        |     0.006 |
+|       GEN_LABEL[105].u_Accumulator        |     0.006 |
+|       GEN_LABEL[106].u_Accumulator        |     0.006 |
+|       GEN_LABEL[107].u_Accumulator        |     0.007 |
+|       GEN_LABEL[108].u_Accumulator        |     0.006 |
+|       GEN_LABEL[109].u_Accumulator        |     0.006 |
+|       GEN_LABEL[10].u_Accumulator         |     0.006 |
+|       GEN_LABEL[110].u_Accumulator        |     0.007 |
+|       GEN_LABEL[111].u_Accumulator        |     0.006 |
+|       GEN_LABEL[112].u_Accumulator        |     0.006 |
+|       GEN_LABEL[113].u_Accumulator        |     0.006 |
+|       GEN_LABEL[114].u_Accumulator        |     0.006 |
+|       GEN_LABEL[115].u_Accumulator        |     0.007 |
+|       GEN_LABEL[116].u_Accumulator        |     0.006 |
+|       GEN_LABEL[117].u_Accumulator        |     0.006 |
+|       GEN_LABEL[118].u_Accumulator        |     0.006 |
+|       GEN_LABEL[119].u_Accumulator        |     0.007 |
+|       GEN_LABEL[11].u_Accumulator         |     0.006 |
+|       GEN_LABEL[120].u_Accumulator        |     0.006 |
+|       GEN_LABEL[121].u_Accumulator        |     0.006 |
+|       GEN_LABEL[122].u_Accumulator        |     0.007 |
+|       GEN_LABEL[123].u_Accumulator        |     0.006 |
+|       GEN_LABEL[124].u_Accumulator        |     0.006 |
+|       GEN_LABEL[125].u_Accumulator        |     0.006 |
+|       GEN_LABEL[126].u_Accumulator        |     0.006 |
+|       GEN_LABEL[127].u_Accumulator        |     0.006 |
+|       GEN_LABEL[128].u_Accumulator        |     0.006 |
+|       GEN_LABEL[129].u_Accumulator        |     0.006 |
+|       GEN_LABEL[12].u_Accumulator         |     0.006 |
+|       GEN_LABEL[130].u_Accumulator        |     0.006 |
+|       GEN_LABEL[131].u_Accumulator        |     0.007 |
+|       GEN_LABEL[132].u_Accumulator        |     0.006 |
+|       GEN_LABEL[133].u_Accumulator        |     0.007 |
+|       GEN_LABEL[134].u_Accumulator        |     0.006 |
+|       GEN_LABEL[135].u_Accumulator        |     0.006 |
+|       GEN_LABEL[136].u_Accumulator        |     0.006 |
+|       GEN_LABEL[137].u_Accumulator        |     0.006 |
+|       GEN_LABEL[138].u_Accumulator        |     0.006 |
+|       GEN_LABEL[139].u_Accumulator        |     0.007 |
+|       GEN_LABEL[13].u_Accumulator         |     0.006 |
+|       GEN_LABEL[140].u_Accumulator        |     0.006 |
+|       GEN_LABEL[141].u_Accumulator        |     0.006 |
+|       GEN_LABEL[142].u_Accumulator        |     0.006 |
+|       GEN_LABEL[143].u_Accumulator        |     0.006 |
+|       GEN_LABEL[144].u_Accumulator        |     0.006 |
+|       GEN_LABEL[145].u_Accumulator        |     0.006 |
+|       GEN_LABEL[146].u_Accumulator        |     0.006 |
+|       GEN_LABEL[147].u_Accumulator        |     0.007 |
+|       GEN_LABEL[148].u_Accumulator        |     0.006 |
+|       GEN_LABEL[149].u_Accumulator        |     0.006 |
+|       GEN_LABEL[14].u_Accumulator         |     0.007 |
+|       GEN_LABEL[150].u_Accumulator        |     0.006 |
+|       GEN_LABEL[151].u_Accumulator        |     0.006 |
+|       GEN_LABEL[152].u_Accumulator        |     0.006 |
+|       GEN_LABEL[153].u_Accumulator        |     0.006 |
+|       GEN_LABEL[154].u_Accumulator        |     0.006 |
+|       GEN_LABEL[155].u_Accumulator        |     0.007 |
+|       GEN_LABEL[156].u_Accumulator        |     0.006 |
+|       GEN_LABEL[157].u_Accumulator        |     0.006 |
+|       GEN_LABEL[158].u_Accumulator        |     0.006 |
+|       GEN_LABEL[159].u_Accumulator        |     0.006 |
+|       GEN_LABEL[15].u_Accumulator         |     0.007 |
+|       GEN_LABEL[160].u_Accumulator        |     0.006 |
+|       GEN_LABEL[161].u_Accumulator        |     0.006 |
+|       GEN_LABEL[162].u_Accumulator        |     0.007 |
+|       GEN_LABEL[163].u_Accumulator        |     0.008 |
+|       GEN_LABEL[164].u_Accumulator        |     0.006 |
+|       GEN_LABEL[165].u_Accumulator        |     0.006 |
+|       GEN_LABEL[166].u_Accumulator        |     0.006 |
+|       GEN_LABEL[167].u_Accumulator        |     0.007 |
+|       GEN_LABEL[168].u_Accumulator        |     0.007 |
+|       GEN_LABEL[169].u_Accumulator        |     0.007 |
+|       GEN_LABEL[16].u_Accumulator         |     0.006 |
+|       GEN_LABEL[170].u_Accumulator        |     0.006 |
+|       GEN_LABEL[171].u_Accumulator        |     0.007 |
+|       GEN_LABEL[172].u_Accumulator        |     0.006 |
+|       GEN_LABEL[173].u_Accumulator        |     0.006 |
+|       GEN_LABEL[174].u_Accumulator        |     0.006 |
+|       GEN_LABEL[175].u_Accumulator        |     0.006 |
+|       GEN_LABEL[176].u_Accumulator        |     0.006 |
+|       GEN_LABEL[177].u_Accumulator        |     0.006 |
+|       GEN_LABEL[178].u_Accumulator        |     0.006 |
+|       GEN_LABEL[179].u_Accumulator        |     0.008 |
+|       GEN_LABEL[17].u_Accumulator         |     0.006 |
+|       GEN_LABEL[18].u_Accumulator         |     0.006 |
+|       GEN_LABEL[19].u_Accumulator         |     0.007 |
+|       GEN_LABEL[1].u_Accumulator          |     0.007 |
+|       GEN_LABEL[20].u_Accumulator         |     0.006 |
+|       GEN_LABEL[21].u_Accumulator         |     0.006 |
+|       GEN_LABEL[22].u_Accumulator         |     0.006 |
+|       GEN_LABEL[23].u_Accumulator         |     0.006 |
+|       GEN_LABEL[24].u_Accumulator         |     0.006 |
+|       GEN_LABEL[25].u_Accumulator         |     0.006 |
+|       GEN_LABEL[26].u_Accumulator         |     0.006 |
+|       GEN_LABEL[27].u_Accumulator         |     0.006 |
+|       GEN_LABEL[28].u_Accumulator         |     0.006 |
+|       GEN_LABEL[29].u_Accumulator         |     0.007 |
+|       GEN_LABEL[2].u_Accumulator          |     0.007 |
+|       GEN_LABEL[30].u_Accumulator         |     0.006 |
+|       GEN_LABEL[31].u_Accumulator         |     0.007 |
+|       GEN_LABEL[32].u_Accumulator         |     0.006 |
+|       GEN_LABEL[33].u_Accumulator         |     0.006 |
+|       GEN_LABEL[34].u_Accumulator         |     0.006 |
+|       GEN_LABEL[35].u_Accumulator         |     0.008 |
+|       GEN_LABEL[36].u_Accumulator         |     0.006 |
+|       GEN_LABEL[37].u_Accumulator         |     0.006 |
+|       GEN_LABEL[38].u_Accumulator         |     0.006 |
+|       GEN_LABEL[39].u_Accumulator         |     0.006 |
+|       GEN_LABEL[3].u_Accumulator          |     0.007 |
+|       GEN_LABEL[40].u_Accumulator         |     0.006 |
+|       GEN_LABEL[41].u_Accumulator         |     0.006 |
+|       GEN_LABEL[42].u_Accumulator         |     0.006 |
+|       GEN_LABEL[43].u_Accumulator         |     0.006 |
+|       GEN_LABEL[44].u_Accumulator         |     0.006 |
+|       GEN_LABEL[45].u_Accumulator         |     0.006 |
+|       GEN_LABEL[46].u_Accumulator         |     0.006 |
+|       GEN_LABEL[47].u_Accumulator         |     0.006 |
+|       GEN_LABEL[48].u_Accumulator         |     0.006 |
+|       GEN_LABEL[49].u_Accumulator         |     0.006 |
+|       GEN_LABEL[4].u_Accumulator          |     0.006 |
+|       GEN_LABEL[50].u_Accumulator         |     0.006 |
+|       GEN_LABEL[51].u_Accumulator         |     0.007 |
+|       GEN_LABEL[52].u_Accumulator         |     0.006 |
+|       GEN_LABEL[53].u_Accumulator         |     0.006 |
+|       GEN_LABEL[54].u_Accumulator         |     0.007 |
+|       GEN_LABEL[55].u_Accumulator         |     0.007 |
+|       GEN_LABEL[56].u_Accumulator         |     0.006 |
+|       GEN_LABEL[57].u_Accumulator         |     0.006 |
+|       GEN_LABEL[58].u_Accumulator         |     0.006 |
+|       GEN_LABEL[59].u_Accumulator         |     0.006 |
+|       GEN_LABEL[5].u_Accumulator          |     0.006 |
+|       GEN_LABEL[60].u_Accumulator         |     0.006 |
+|       GEN_LABEL[61].u_Accumulator         |     0.006 |
+|       GEN_LABEL[62].u_Accumulator         |     0.006 |
+|       GEN_LABEL[63].u_Accumulator         |     0.006 |
+|       GEN_LABEL[64].u_Accumulator         |     0.006 |
+|       GEN_LABEL[65].u_Accumulator         |     0.006 |
+|       GEN_LABEL[66].u_Accumulator         |     0.006 |
+|       GEN_LABEL[67].u_Accumulator         |     0.007 |
+|       GEN_LABEL[68].u_Accumulator         |     0.006 |
+|       GEN_LABEL[69].u_Accumulator         |     0.006 |
+|       GEN_LABEL[6].u_Accumulator          |     0.006 |
+|       GEN_LABEL[70].u_Accumulator         |     0.006 |
+|       GEN_LABEL[71].u_Accumulator         |     0.006 |
+|       GEN_LABEL[72].u_Accumulator         |     0.006 |
+|       GEN_LABEL[73].u_Accumulator         |     0.006 |
+|       GEN_LABEL[74].u_Accumulator         |     0.006 |
+|       GEN_LABEL[75].u_Accumulator         |     0.006 |
+|       GEN_LABEL[76].u_Accumulator         |     0.006 |
+|       GEN_LABEL[77].u_Accumulator         |     0.006 |
+|       GEN_LABEL[78].u_Accumulator         |     0.006 |
+|       GEN_LABEL[79].u_Accumulator         |     0.006 |
+|       GEN_LABEL[7].u_Accumulator          |     0.006 |
+|       GEN_LABEL[80].u_Accumulator         |     0.006 |
+|       GEN_LABEL[81].u_Accumulator         |     0.006 |
+|       GEN_LABEL[82].u_Accumulator         |     0.006 |
+|       GEN_LABEL[83].u_Accumulator         |     0.007 |
+|       GEN_LABEL[84].u_Accumulator         |     0.006 |
+|       GEN_LABEL[85].u_Accumulator         |     0.006 |
+|       GEN_LABEL[86].u_Accumulator         |     0.006 |
+|       GEN_LABEL[87].u_Accumulator         |     0.006 |
+|       GEN_LABEL[88].u_Accumulator         |     0.006 |
+|       GEN_LABEL[89].u_Accumulator         |     0.006 |
+|       GEN_LABEL[8].u_Accumulator          |     0.006 |
+|       GEN_LABEL[90].u_Accumulator         |     0.005 |
+|       GEN_LABEL[91].u_Accumulator         |     0.006 |
+|       GEN_LABEL[92].u_Accumulator         |     0.006 |
+|       GEN_LABEL[93].u_Accumulator         |     0.006 |
+|       GEN_LABEL[94].u_Accumulator         |     0.006 |
+|       GEN_LABEL[95].u_Accumulator         |     0.006 |
+|       GEN_LABEL[96].u_Accumulator         |     0.006 |
+|       GEN_LABEL[97].u_Accumulator         |     0.006 |
+|       GEN_LABEL[98].u_Accumulator         |     0.006 |
+|       GEN_LABEL[99].u_Accumulator         |     0.007 |
+|       GEN_LABEL[9].u_Accumulator          |     0.006 |
+|   u_Parallel_LHT_Kernel                   |     0.139 |
+|     u_Hough_Kernel                        |     0.138 |
+|       u_Hough_Kernel_Symmetric_Look_Ahead |     0.138 |
++-------------------------------------------+-----------+
+
+
