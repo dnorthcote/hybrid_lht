@@ -34,6 +34,21 @@ for name_idx = 1:length(name)
 
     % Set input image
     bt.inputImage = uint8(edge);
+    
+    % Squash some bugs and override the model (still messy)
+    if ceil(log2((bt.maxRho*2))) <= 9
+        set_param(['parallel_lht', '/Parallel LHT/Parallel LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM'], 'OverrideUsingVariant',...
+            '9_bits');
+    else
+        set_param(['parallel_lht', '/Parallel LHT/Parallel LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM'], 'OverrideUsingVariant',...
+            'other_bits');
+
+        set_param(['parallel_lht', '/Parallel LHT/Parallel LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
+            'd', int2str(bt.nRho));
+
+        set_param(['parallel_lht', '/Parallel LHT/Parallel LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
+            'b', int2str(ceil(log2(bt.nRho))));
+    end
 
     % Update simulink model
     set_param('parallel_lht', 'SimulationCommand', 'update'); 
