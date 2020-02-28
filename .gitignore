@@ -2,7 +2,5 @@
 *.slxc
 *.autosave
 *\hdl_prj
-*.log
-*.jou
 
 *.asv

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 27 22:06:40 2020
+# Process ID: 40656
+# Current directory: C:/hybrid_lht/models/parallel_lht/hdl_prj_768p/vivado_prj/Parallel_LHT_vivado.runs/impl_1
+# Command line: vivado.exe -log Parallel_LHT.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Parallel_LHT.tcl -notrace
+# Log file: C:/hybrid_lht/models/parallel_lht/hdl_prj_768p/vivado_prj/Parallel_LHT_vivado.runs/impl_1/Parallel_LHT.vdi
+# Journal file: C:/hybrid_lht/models/parallel_lht/hdl_prj_768p/vivado_prj/Parallel_LHT_vivado.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Parallel_LHT.tcl -notrace
