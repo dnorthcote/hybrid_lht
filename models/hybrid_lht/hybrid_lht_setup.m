@@ -11,9 +11,9 @@ close all;
 % load('512_Chen_BaseTest.mat')
 % load('480p_BaseTest.mat')
 % load('333_Zhou_BaseTest.mat')
-load('240p_BaseTest.mat')
+ load('240p_BaseTest.mat')
 
-Y = double(imresize(rgb2gray(imread('brick_wall.jpg')),...
+Y = double(imresize(rgb2gray(imread('dirty_window.jpg')),...
     [bt.height, bt.width]));
 
 %%
@@ -35,21 +35,10 @@ if strcmp(bt.name, '768_Lu')
 end
     
 % Set input image
-bt.inputImage = double(bitconcat(fi(edge, 0, 1, 0), fi(floor(Gdir), 0, ceil(log2(bt.nTheta)), 0)));
+bt.inputImage = (bitconcat(fi(edge, 0, 1, 0), fi(Gdir, 0, ceil(log2(bt.nTheta)), 0)));
 
 if strcmp(bdroot, 'hybrid_lht_accumulator')
     % Squash some bugs and override the model (still messy)
-    if ceil(log2((bt.maxRho*2))) <= 9
-        set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM'], 'OverrideUsingVariant',...
-            '9_bits');
-    else
-        set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM'], 'OverrideUsingVariant',...
-            'other_bits');
-
-        set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
-            'd', int2str(bt.nRho));
-
-        set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
-            'b', int2str(ceil(log2(bt.nRho))));
-    end
+    set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
+        'd', int2str(bt.nRho));
 end
