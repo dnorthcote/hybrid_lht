@@ -11,7 +11,7 @@ close all;
 % load('512_Chen_BaseTest.mat')
 % load('480p_BaseTest.mat')
 % load('333_Zhou_BaseTest.mat')
- load('240p_BaseTest.mat')
+load('240p_BaseTest.mat')
 
 Y = double(imresize(rgb2gray(imread('dirty_window.jpg')),...
     [bt.height, bt.width]));

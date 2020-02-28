@@ -17,14 +17,14 @@ sinQ = double(fi(sin(deg2rad(bt.theta)), 1, bt.paramWord, bt.paramWord-2));
 subflag = ~mod(bt.nTheta/L, 2);
 
 comp = zeros(bt.height* bt.width, bt.nTheta/L);
-%edges = double(bitsliceget(bt.inputImage, ceil(log2(bt.nTheta*2)), ceil(log2(bt.nTheta*2))));
-%orientations = double(bitsliceget(bt.inputImage, ceil(log2(bt.nTheta*2))-1, 1));
+edges = double(bitsliceget(bt.inputImage, ceil(log2(bt.nTheta*2)), ceil(log2(bt.nTheta*2))));
+orientations = double(bitsliceget(bt.inputImage, ceil(log2(bt.nTheta*2))-1, 1));
 
 for y = 1:bt.height
     for x = 1:bt.width
-        if (edge(y, x))
+        if (edges(y, x))
             
-            idx = Gdir(y, x);
+            idx = orientations(y, x);
             yTemp = y - bt.height/2 -1;
             xTemp = x - bt.width/2 -1;
             
