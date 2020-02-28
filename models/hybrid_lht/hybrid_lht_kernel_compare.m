@@ -5,8 +5,10 @@ L = floor(36/ceil(log2(bt.nRho)));
 lambda = floor(bt.nTheta/(2*L));
 
 % Set upper and lower bounds for idx
-upper = bt.nTheta/L : bt.nTheta/L : bt.maxTheta + 1;
-lower = 0 : bt.nTheta/L : bt.maxTheta;
+%upper = bt.nTheta/L : bt.nTheta/L : bt.maxTheta + 1;
+upper = floor(bt.nTheta/L): floor(bt.nTheta/L): bt.nTheta;
+lower = 0:floor(bt.nTheta/L):bt.nTheta-1;
+%lower = 0 : bt.nTheta/L : bt.maxTheta;
 
 % Set bitshift idx
 P = (0:1:L-1)*ceil(log2((2*bt.maxRho)));
@@ -70,6 +72,46 @@ for y = 1:bt.height
         end
     end
 end
+
+% for y = 1:bt.height
+%     for x = 1:bt.width
+%         idx = floor(Gdir(y, x));
+%         yTemp = y - bt.height/2 -1;
+%         xTemp = x - bt.width/2 -1;
+%         
+%         j = 0;
+%         
+%         if edge (y, x)
+% 
+%             for i = idx - lambda : 1 : idx + lambda - subflag
+% 
+%                 % Get a temporary index for manipulation
+%                 i_temp = i;
+% 
+%                 j = j + 1;
+% 
+%                 % Check the theta index for limits
+%                 if i_temp < 0
+%                     i_temp = i_temp + bt.nTheta;
+%                 end
+%                 if i_temp > bt.nTheta-1
+%                     i_temp = i_temp - bt.nTheta;
+%                 end
+% 
+%                 % Obtain the value of theta relative to our temporary index
+%                 theta_i = i_temp;
+% 
+%                 % This calculation will need to be changed when using the Basic
+%                 % models that do not round/truncate
+%                 rhoTemp = round(round(xTemp*cosQ(theta_i+1)) + ...
+%                     round(yTemp*sinQ(theta_i+1)) + bt.maxRho);
+% 
+%                 Hparam(y, x, theta_i+1) = rhoTemp;
+% 
+%             end
+%         end
+%     end
+% end
 
 % Compare software model against simulation
 simrho = reshape(out.datarho, [bt.width, bt.height, bt.nTheta/L]);
