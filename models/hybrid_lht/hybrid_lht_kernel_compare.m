@@ -9,7 +9,7 @@ upper = bt.nTheta/L : bt.nTheta/L : bt.maxTheta + 1;
 lower = 0 : bt.nTheta/L : bt.maxTheta;
 
 % Set bitshift idx
-P = (0:1:L-1)*36/L;
+P = (0:1:L-1)*ceil(log2((2*bt.maxRho)));
 
 % Get hough parameter space
 Hparam = zeros(bt.height, bt.width, bt.nTheta/L);

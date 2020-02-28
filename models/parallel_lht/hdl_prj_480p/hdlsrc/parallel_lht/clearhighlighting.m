@@ -1,0 +1,18 @@
+SLStudio.Utils.RemoveHighlighting(get_param('parallel_lht', 'handle'));
+SLStudio.Utils.RemoveHighlighting(get_param('gm_parallel_lht', 'handle'));
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Hough Kernel Symmetric/Cosine', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Hough Kernel Symmetric/Cosine', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/MATLAB Function', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/MATLAB Function', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/Constant', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/Constant', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/Constant1', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/Constant1', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/SineROM', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/SineROM', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/row_0', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/row_0', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/theta_index', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/theta_index', 0, 1, '');
+annotate_port('gm_parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/Relational Operator', 0, 1, '');
+annotate_port('parallel_lht/Parallel LHT/Parallel LHT Kernel/Hough Kernel/Hough Kernel Symmetric Look Ahead/Look Ahead Hough/Relational Operator', 0, 1, '');

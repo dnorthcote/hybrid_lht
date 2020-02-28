@@ -1,6 +1,7 @@
 *\slprj
 *.slxc
 *.autosave
-*\hdl_prj*
+*\hdl_prj
 *.log
 *.jou
+
