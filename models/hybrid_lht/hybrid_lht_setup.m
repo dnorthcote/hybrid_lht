@@ -42,3 +42,13 @@ if strcmp(bdroot, 'hybrid_lht_accumulator')
     set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
         'd', int2str(bt.nRho));
 end
+
+%
+% Enable support for symmetric look ahead kernel
+if strcmp(bt.name, '768_Lu') || strcmp(bt.name, '600_Elhossini')
+    set_param(['hybrid_lht', '/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/'], 'OverrideUsingVariant',...
+'Normal');
+else
+    set_param(['hybrid_lht', '/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/'], 'OverrideUsingVariant',...
+'Symmetric');
+end

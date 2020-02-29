@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb 29 02:04:32 2020
+# Process ID: 24136
+# Current directory: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj
+# Command line: vivado.exe Hybrid_LHT_vivado.xpr
+# Log file: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/vivado.log
+# Journal file: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Hybrid_LHT_vivado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 10
+[Sat Feb 29 02:04:55 2020] Launched synth_1...
+Run output will be captured here: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/Hybrid_LHT_vivado.runs/synth_1/runme.log
+[Sat Feb 29 02:04:55 2020] Launched impl_1...
+Run output will be captured here: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/Hybrid_LHT_vivado.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Netlist 29-17] Analyzing 8889 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2585.742 ; gain = 110.652
+Restored from archive | CPU: 8.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2585.742 ; gain = 110.652
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2592.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 61 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 61 instances
+
+open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:44 . Memory (MB): peak = 3001.473 ; gain = 2194.078
+open_report: Time (s): cpu = 00:00:41 ; elapsed = 00:00:10 . Memory (MB): peak = 4206.863 ; gain = 988.965
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 5371.926 ; gain = 0.000

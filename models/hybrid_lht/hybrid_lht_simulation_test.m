@@ -7,7 +7,7 @@ name = {'1080p', '720p', '768p', '768_Lu', '600_Elhossini', '480p', '512_Chen', 
 status = ones(1, length(name)); % status vector all set to one which indicates fail.
 
 %% Load a test image
-I = {imread('brick_wall.jpg'), imread('circle_steps_twist.jpg')};
+I = {imread('brick_wall.jpg')};%, imread('circle_steps_twist.jpg')};
 img_status = ones(1, length(I)); % status vector all set to one which indicates fail.
 
 %% Open the model
@@ -36,6 +36,16 @@ for name_idx = 1:length(name)
             edge = ~(Gdir > bt.maxTheta).*edge;
             % Then set those values to zero
             Gdir = (Gdir <= bt.maxTheta).*Gdir;
+        end
+        
+        %
+        % Enable support for symmetric look ahead kernel
+        if strcmp(bt.name, '768_Lu') || strcmp(bt.name, '600_Elhossini')
+            set_param(['hybrid_lht', '/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/'], 'OverrideUsingVariant',...
+        'Normal');
+        else
+            set_param(['hybrid_lht', '/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/'], 'OverrideUsingVariant',...
+        'Symmetric');
         end
 
         % Set input image

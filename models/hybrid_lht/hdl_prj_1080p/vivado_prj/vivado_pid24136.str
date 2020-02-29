@@ -1,0 +1,274 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 24136
+License: Customer
+
+Current time: 	Sat Feb 29 02:04:42 GMT 2020
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 113 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	rgb11127
+User home directory: C:/Users/rgb11127
+User working directory: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/rgb11127/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/rgb11127/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/rgb11127/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/vivado.log
+Vivado journal file location: 	C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/vivado.jou
+Engine tmp dir: 	C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/.Xil/Vivado-24136-eee-bumblebee
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinx.license.eee.strath.ac.uk
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 676 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: Hybrid_LHT_vivado.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project Hybrid_LHT_vivado.xpr 
+// Tcl Message: open_project Hybrid_LHT_vivado.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 102 MB (+104926kb) [00:00:08]
+// [Engine Memory]: 701 MB (+583657kb) [00:00:08]
+// [GUI Memory]: 108 MB (+794kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2021 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 705 MB. GUI used memory: 53 MB. Current time: 2/29/20, 2:04:45 AM GMT
+// Project name: Hybrid_LHT_vivado; location: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj; part: xczu7ev-ffvc1156-2-e
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cl): Launch Runs: addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 753 MB (+18160kb) [00:00:19]
+// Tcl Message: launch_runs impl_1 -jobs 10 
+// Tcl Message: [Sat Feb 29 02:04:55 2020] Launched synth_1... Run output will be captured here: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/Hybrid_LHT_vivado.runs/synth_1/runme.log [Sat Feb 29 02:04:55 2020] Launched impl_1... Run output will be captured here: C:/hybrid_lht/models/hybrid_lht/hdl_prj_1080p/vivado_prj/Hybrid_LHT_vivado.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 126 MB (+12582kb) [00:01:25]
+// Elapsed time: 77 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK (aH, cl)
+selectTab((HResource) null, (String) null, (HResource) null, "Log", 2, false, true); // aK (aH, cl) - Double Click
+maximizeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // az (aK, cl)
+// Elapsed time: 503 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 1252, 503); // n (q, cl)
+// [GUI Memory]: 138 MB (+5681kb) [00:11:20]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 315 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i (A, cl)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 18 seconds
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "BRAMs", 12); // ay (O, cl)
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "LUT", 10); // ay (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 780 MB. GUI used memory: 60 MB. Current time: 2/29/20, 2:34:50 AM GMT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 904 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,242 MB. GUI used memory: 61 MB. Current time: 2/29/20, 2:35:30 AM GMT
+// [Engine Memory]: 1,938 MB (+1202368kb) [00:31:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,974 MB. GUI used memory: 61 MB. Current time: 2/29/20, 2:35:50 AM GMT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 61 MB. Current time: 2/29/20, 2:36:05 AM GMT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,515 MB. GUI used memory: 61 MB. Current time: 2/29/20, 2:36:07 AM GMT
+// [Engine Memory]: 2,515 MB (+503661kb) [00:31:32]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 193 MB (+50831kb) [00:31:34]
+// [Engine Memory]: 2,908 MB (+280315kb) [00:31:34]
+// Xgd.load filename: C:/Xilinx/Vivado/2019.1/data/parts/xilinx/zynquplus/devint/zynquplus/xczu7ev/xczu7ev.xgd; ZipEntry: xczu7ev_detail.xgd elapsed time: 2s
+// [GUI Memory]: 214 MB (+12405kb) [00:31:34]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1766 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e INFO: [Netlist 29-17] Analyzing 8889 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2585.742 ; gain = 110.652 
+// Tcl Message: Restored from archive | CPU: 8.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2585.742 ; gain = 110.652 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2592.457 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 61 instances were transformed.   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 61 instances  
+// Elapsed time: 43 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // az (aK, cl)
+// ExpRunCommands.openImplResults elapsed time: 43.8s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:44 . Memory (MB): peak = 3001.473 ; gain = 2194.078 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 227 MB (+1442kb) [00:31:37]
+// [Engine Memory]: 3,071 MB (+18315kb) [00:31:38]
+// [Engine Memory]: 3,225 MB (+415kb) [00:31:38]
+// TclEventType: POWER_UPDATED
+// [Engine Memory]: 3,454 MB (+70625kb) [00:31:41]
+// [GUI Memory]: 239 MB (+1005kb) [00:31:41]
+// [Engine Memory]: 3,965 MB (+354501kb) [00:31:46]
+// [GUI Memory]: 252 MB (+904kb) [00:31:46]
+// [GUI Memory]: 265 MB (+718kb) [00:31:47]
+// [GUI Memory]: 278 MB (+97kb) [00:31:47]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 15.3s
+// WARNING: HEventQueue.dispatchEvent() is taking  7341 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,092 MB. GUI used memory: 256 MB. Current time: 2/29/20, 2:36:24 AM GMT
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 4,174 MB (+11730kb) [00:31:49]
+// 'dR' command handler elapsed time: 58 seconds
+// Elapsed time: 14 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,178 MB. GUI used memory: 205 MB. Current time: 2/29/20, 2:36:40 AM GMT
+// [Engine Memory]: 5,178 MB (+833663kb) [00:32:05]
+// RouteApi::initDelayMediator elapsed time: 32.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 39 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a (O, cl)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (O, cl)
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 4, true); // a (O, cl) - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 27, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cl): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (cl)
+// by (cl):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,178 MB. GUI used memory: 222 MB. Current time: 2/29/20, 2:37:31 AM GMT
+// WARNING: HEventQueue.dispatchEvent() is taking  1159 ms.
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 5371.926 ; gain = 0.000 
+dismissDialog("Report Utilization"); // by (cl)
+maximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // az (aK, cl)
+// Device view-level: 0.1
+// Elapsed time: 45 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // az (aK, cl)
+maximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // az (aK, cl)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cl)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// Elapsed time: 86 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs]", 6, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers]", 8, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (O, cl)
+// Elapsed time: 20 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, LUT as Logic]", 16, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers]", 11, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution]", 10, true); // l (O, cl) - Node
+// Elapsed time: 16 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers, Register as Flip Flop]", 9, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers]", 11, true); // l (O, cl) - Node
+// Elapsed time: 21 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (O, cl)
+// Elapsed time: 28 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs]", 6, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Logic]", 7, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers]", 8, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers, Register as Flip Flop]", 9, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution]", 10, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers]", 11, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers, Register driven from within the CLB]", 12, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers, Register driven from outside the CLB]", 13, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers, Register driven from outside the CLB, LUT in front of the register is used]", 14, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers, Register driven from outside the CLB, LUT in front of the register is unused]", 15, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, LUT as Logic]", 16, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, LUT as Logic, using O5 and O6<>LUT as Logic]", 17, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, LUT as Logic, using O5 output only<>LUT as Logic]", 18, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, LUT as Logic, using O6 output only<>LUT as Logic]", 19, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB]", 20, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB, CLBM]", 21, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM]", 23, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM]", 23, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile]", 24, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, ARITHMETIC]", 29, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, ARITHMETIC, DSPs]", 30, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, ARITHMETIC]", 29, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, ARITHMETIC, DSPs]", 30, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, ARITHMETIC, DSPs, DSP48E2 only]", 31, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Logic]", 7, false); // l (O, cl)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers]", 8, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution]", 10, true); // l (O, cl) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic Distribution, CLB Registers, Register driven from outside the CLB, LUT in front of the register is used]", 14, false); // l (O, cl)

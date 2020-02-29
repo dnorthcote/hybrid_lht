@@ -50,6 +50,16 @@ for name_idx = 1:length(name)
     set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
         'd', int2str(bt.nRho));
     
+    %
+    % Enable support for symmetric look ahead kernel
+    if strcmp(bt.name, '768_Lu') || strcmp(bt.name, '600_Elhossini')
+        set_param(['hybrid_lht', '/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/'], 'OverrideUsingVariant',...
+    'Normal');
+    else
+        set_param(['hybrid_lht', '/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/'], 'OverrideUsingVariant',...
+    'Symmetric');
+    end
+    
     % Update simulink model
     set_param('hybrid_lht', 'SimulationCommand', 'update');
     
@@ -64,7 +74,7 @@ for name_idx = 1:length(name)
     hdlset_param('hybrid_lht', 'SynthesisToolPackageName', '');
     hdlset_param('hybrid_lht', 'SynthesisToolSpeedValue', '');
     hdlset_param('hybrid_lht', 'TargetDirectory', 'hdl_prj\hdlsrc');
-    hdlset_param('hybrid_lht', 'TargetFrequency', 150);
+    hdlset_param('hybrid_lht', 'TargetFrequency', 120);
 
     % Set SubSystem HDL parameters
     hdlset_param('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough', 'DistributedPipelining', 'on');
