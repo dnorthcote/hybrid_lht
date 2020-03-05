@@ -24,7 +24,7 @@ for name_idx = 1:length(name)
     load([name{name_idx}, '_BaseTest.mat']);
 
     % Image Initialisation
-    Y = double(imresize(rgb2gray(I{img_idx}), [bt.height, bt.width]));
+    Y = double(imresize(rgb2gray(I), [bt.height, bt.width]));
 
     % Apply the Sobel operators to the greyscale image to obtain the binary
     % edge image and gradient orientation.
