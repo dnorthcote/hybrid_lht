@@ -64,7 +64,7 @@ for name_idx = 1:length(name)
     set_param('hybrid_lht', 'SimulationCommand', 'update');
     
     % Crank out some HDL Coder commands
-    hdlset_param('hybrid_lht', 'BalanceDelays', 'off');
+    hdlset_param('hybrid_lht', 'BalanceDelays', 'on');
     hdlset_param('hybrid_lht', 'GenerateHDLTestBench', 'off');
     hdlset_param('hybrid_lht', 'GenerateValidationModel', 'on');
     hdlset_param('hybrid_lht', 'HDLSubsystem', 'hybrid_lht/Hybrid LHT');

@@ -1,0 +1,148 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Mar  5 10:40:28 2020
+| Host         : eee-bumblebee running 64-bit major release  (build 9200)
+| Command      : report_drc -file Hybrid_LHT_drc_routed.rpt -pb Hybrid_LHT_drc_routed.pb -rpx Hybrid_LHT_drc_routed.rpx
+| Design       : Hybrid_LHT
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 22
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-2    | Warning  | Input pipelining       | 14         |
+| DPOP-4    | Warning  | MREG Output pipelining | 7          |
+| RTSTAT-10 | Warning  | No routable loads      | 1          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[1] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[1]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[1] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[1]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[2] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[2]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[2] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[2]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[3] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[3]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#8 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[3] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[3]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#9 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[4] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[4]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#10 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[4] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[4]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#11 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[5] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[5]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#12 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[5] input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[5]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#13 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1 input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#14 Warning
+Input pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1 input u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0] multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[1] multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[1]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[2] multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[2]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[3] multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[3]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[4] multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[4]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[5] multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[5]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1 multiplier stage u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+13 net(s) have no routable loads. The problem bus(es) and/or net(s) are u_Hybrid_LHT_Accumulator/m_axis_tdata[9:0], m_axis_tlast, u_Hybrid_LHT_Accumulator/m_axis_tuser, m_axis_tvalid.
+Related violations: <none>
+
+

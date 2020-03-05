@@ -1,0 +1,909 @@
+
+*** Running vivado
+    with args -log Hybrid_LHT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hybrid_LHT.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Hybrid_LHT.tcl -notrace
+Command: synth_design -top Hybrid_LHT -part xczu7ev-ffvc1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 86252 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1359.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Hybrid_LHT' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT.vhd:62]
+INFO: [Synth 8-3491] module 'Hybrid_LHT_Kernel' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Kernel.vhd:23' bound to instance 'u_Hybrid_LHT_Kernel' of component 'Hybrid_LHT_Kernel' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'Hybrid_LHT_Kernel' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Kernel.vhd:41]
+INFO: [Synth 8-3491] module 'Extract_Active_Votes' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:23' bound to instance 'u_Extract_Active_Votes' of component 'Extract_Active_Votes' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Kernel.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'Extract_Active_Votes' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:33]
+INFO: [Synth 8-3491] module 'GetShift' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift.vhd:23' bound to instance 'u_GetShift' of component 'GetShift' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'GetShift' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'GetShift' (1#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift.vhd:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_5_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:462]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_4_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:456]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_3_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:450]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_2_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:444]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_1_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:438]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_0_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:432]
+INFO: [Synth 8-256] done synthesizing module 'Extract_Active_Votes' (2#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes.vhd:33]
+INFO: [Synth 8-3491] module 'Gradient_Kernel_System' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Gradient_Kernel_System.vhd:23' bound to instance 'u_Gradient_Kernel_System' of component 'Gradient_Kernel_System' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Kernel.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Gradient_Kernel_System' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Gradient_Kernel_System.vhd:38]
+INFO: [Synth 8-3491] module 'Get_Index_and_Fix_Limits' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:23' bound to instance 'u_Get_Index_and_Fix_Limits' of component 'Get_Index_and_Fix_Limits' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Gradient_Kernel_System.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'Get_Index_and_Fix_Limits' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:34]
+INFO: [Synth 8-3491] module 'Extract_Active_Votes_block' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:24' bound to instance 'u_Extract_Active_Votes' of component 'Extract_Active_Votes_block' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'Extract_Active_Votes_block' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_5_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:392]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_4_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:386]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_3_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:380]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_2_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:374]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_1_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:368]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Multiport_Switch3_out1_0_reg' and it is trimmed from '9' to '5' bits. [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:362]
+INFO: [Synth 8-256] done synthesizing module 'Extract_Active_Votes_block' (3#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Extract_Active_Votes_block.vhd:31]
+INFO: [Synth 8-3491] module 'GetShift1' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:23' bound to instance 'u_GetShift1' of component 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'GetShift1' (4#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:30]
+INFO: [Synth 8-3491] module 'GetShift1' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:23' bound to instance 'u_GetShift1' of component 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:87]
+INFO: [Synth 8-3491] module 'GetShift1' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:23' bound to instance 'u_GetShift1' of component 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:87]
+INFO: [Synth 8-3491] module 'GetShift1' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:23' bound to instance 'u_GetShift1' of component 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:87]
+INFO: [Synth 8-3491] module 'GetShift1' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:23' bound to instance 'u_GetShift1' of component 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:87]
+INFO: [Synth 8-3491] module 'GetShift1' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/GetShift1.vhd:23' bound to instance 'u_GetShift1' of component 'GetShift1' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'Get_Index_and_Fix_Limits' (5#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Get_Index_and_Fix_Limits.vhd:34]
+INFO: [Synth 8-3491] module 'Hough_Kernel_block' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel_block.vhd:23' bound to instance 'u_Hough_Kernel' of component 'Hough_Kernel_block' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Gradient_Kernel_System.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'Hough_Kernel_block' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel_block.vhd:37]
+INFO: [Synth 8-3491] module 'Look_Ahead_Hough_block' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough_block.vhd:23' bound to instance 'u_Look_Ahead_Hough' of component 'Look_Ahead_Hough_block' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel_block.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'Look_Ahead_Hough_block' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough_block.vhd:34]
+INFO: [Synth 8-3491] module 'Look_Ahead_Hough' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:24' bound to instance 'u_Look_Ahead_Hough' of component 'Look_Ahead_Hough' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough_block.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Look_Ahead_Hough' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:35]
+INFO: [Synth 8-3491] module 'MATLAB_Function' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/MATLAB_Function.vhd:23' bound to instance 'u_MATLAB_Function' of component 'MATLAB_Function' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:223]
+INFO: [Synth 8-638] synthesizing module 'MATLAB_Function' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/MATLAB_Function.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'MATLAB_Function' (6#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/MATLAB_Function.vhd:36]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance1' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (7#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:34]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance2' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:243]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance3' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:252]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance4' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:261]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance5' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:270]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance6' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:279]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance7' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:288]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance8' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:297]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance9' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:306]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance10' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:315]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance11' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:324]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance12' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:333]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance13' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:342]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance14' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:351]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance15' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:360]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance16' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:369]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance17' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:378]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Register_Bank.vhd:23' bound to instance 'u_Register_Bank_instance18' of component 'Register_Bank' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:387]
+INFO: [Synth 8-256] done synthesizing module 'Look_Ahead_Hough' (8#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Look_Ahead_Hough_block' (9#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough_block.vhd:34]
+INFO: [Synth 8-3491] module 'Hough_Kernel' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:23' bound to instance 'u_Hough_Kernel' of component 'Hough_Kernel' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel_block.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Hough_Kernel' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Hough_Kernel' (10#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Hough_Kernel_block' (11#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel_block.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Gradient_Kernel_System' (12#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Gradient_Kernel_System.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Hybrid_LHT_Kernel' (13#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Kernel.vhd:41]
+INFO: [Synth 8-3491] module 'Hybrid_LHT_Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Accumulator.vhd:23' bound to instance 'u_Hybrid_LHT_Accumulator' of component 'Hybrid_LHT_Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'Hybrid_LHT_Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Accumulator.vhd:41]
+INFO: [Synth 8-3491] module 'Accumulator_Controller' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_Controller.vhd:22' bound to instance 'u_Accumulator_Controller' of component 'Accumulator_Controller' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Accumulator.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'Accumulator_Controller' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_Controller.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_Controller.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator_Controller' (14#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_Controller.vhd:41]
+INFO: [Synth 8-3491] module 'Accumulator_with_Switches' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:23' bound to instance 'u_Accumulator_with_Switches' of component 'Accumulator_with_Switches' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Accumulator.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'Accumulator_with_Switches' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:39]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:22' bound to instance 'u_Accumulator' of component 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:35]
+INFO: [Synth 8-3491] module 'Block_RAM' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Block_RAM.vhd:22' bound to instance 'u_Block_RAM' of component 'Block_RAM' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Block_RAM' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Block_RAM.vhd:34]
+INFO: [Synth 8-3491] module 'Simple_Dual_Port_RAM_Generator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Simple_Dual_Port_RAM_Generator.vhd:23' bound to instance 'u_Simple_Dual_Port_RAM_Generator' of component 'Simple_Dual_Port_RAM_Generator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Block_RAM.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'Simple_Dual_Port_RAM_Generator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Simple_Dual_Port_RAM_Generator.vhd:35]
+	Parameter AddrWidth bound to: 10 - type: integer 
+	Parameter DataWidth bound to: 36 - type: integer 
+INFO: [Synth 8-3491] module 'SimpleDualPortRAM_generic' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/SimpleDualPortRAM_generic.vhd:23' bound to instance 'u_simple_ram_0' of component 'SimpleDualPortRAM_generic' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Simple_Dual_Port_RAM_Generator.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'SimpleDualPortRAM_generic' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/SimpleDualPortRAM_generic.vhd:38]
+	Parameter AddrWidth bound to: 10 - type: integer 
+	Parameter DataWidth bound to: 36 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SimpleDualPortRAM_generic' (15#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/SimpleDualPortRAM_generic.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Simple_Dual_Port_RAM_Generator' (16#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Simple_Dual_Port_RAM_Generator.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Block_RAM' (17#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Block_RAM.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator' (18#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:35]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:22' bound to instance 'u_Accumulator' of component 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:184]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:22' bound to instance 'u_Accumulator' of component 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:184]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:22' bound to instance 'u_Accumulator' of component 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:184]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:22' bound to instance 'u_Accumulator' of component 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:184]
+INFO: [Synth 8-3491] module 'Accumulator' declared at 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator.vhd:22' bound to instance 'u_Accumulator' of component 'Accumulator' [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator_with_Switches' (19#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Accumulator_with_Switches.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Hybrid_LHT_Accumulator' (20#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT_Accumulator.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Hybrid_LHT' (21#1) [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hybrid_LHT.vhd:62]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[15]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[14]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[13]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[12]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[11]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1401.035 ; gain = 41.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1401.035 ; gain = 41.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1401.035 ; gain = 41.730
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/clock_constraint.xdc]
+Finished Parsing XDC File [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/clock_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1553.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1554.648 ; gain = 0.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1554.648 ; gain = 195.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1554.648 ; gain = 195.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1554.648 ; gain = 195.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MATLAB_Function'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Accumulator_Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 iSTATE0 |                              001 |                              001
+                  iSTATE |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'MATLAB_Function'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Accumulator_Controller'
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"SimpleDualPortRAM_generic:/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "SimpleDualPortRAM_generic:/ram_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1554.648 ; gain = 195.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 17    
+	   3 Input     10 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 7     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 9     
+	   2 Input      5 Bit       Adders := 12    
+	   3 Input      2 Bit       Adders := 7     
++---Registers : 
+	               36 Bit    Registers := 12    
+	               26 Bit    Registers := 7     
+	               16 Bit    Registers := 14    
+	               10 Bit    Registers := 49    
+	                8 Bit    Registers := 18    
+	                6 Bit    Registers := 19    
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 16    
++---RAMs : 
+	              36K Bit         RAMs := 6     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 16    
+	   3 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 6     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   7 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 48    
+	   2 Input      6 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 12    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Hybrid_LHT 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+Module GetShift 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 1     
+Module Extract_Active_Votes 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 5     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 6     
++---Registers : 
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 6     
+Module Extract_Active_Votes_block 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 6     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 6     
+Module GetShift1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 1     
+Module Get_Index_and_Fix_Limits 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 6     
+Module MATLAB_Function 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module Register_Bank 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module Look_Ahead_Hough 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 19    
+	                2 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   7 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 5     
+Module Hough_Kernel 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 6     
++---Registers : 
+	               26 Bit    Registers := 6     
+	               16 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 6     
+Module Hough_Kernel_block 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
+Module Hybrid_LHT_Kernel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 6     
+Module Accumulator_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   4 Input     16 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+Module SimpleDualPortRAM_generic 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
++---RAMs : 
+	              36K Bit         RAMs := 1     
+Module Accumulator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+Module Accumulator_with_Switches 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module Hybrid_LHT_Accumulator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP xcos_out1[0], operation Mode is: A*B.
+DSP Report: operator xcos_out1[0] is absorbed into DSP xcos_out1[0].
+DSP Report: Generating DSP xcos_out1[1], operation Mode is: A*B.
+DSP Report: operator xcos_out1[1] is absorbed into DSP xcos_out1[1].
+DSP Report: Generating DSP xcos_out1[2], operation Mode is: A*B.
+DSP Report: operator xcos_out1[2] is absorbed into DSP xcos_out1[2].
+DSP Report: Generating DSP xcos_out1[3], operation Mode is: A*B.
+DSP Report: operator xcos_out1[3] is absorbed into DSP xcos_out1[3].
+DSP Report: Generating DSP xcos_out1[4], operation Mode is: A*B.
+DSP Report: operator xcos_out1[4] is absorbed into DSP xcos_out1[4].
+DSP Report: Generating DSP xcos_out1[5], operation Mode is: A*B.
+DSP Report: operator xcos_out1[5] is absorbed into DSP xcos_out1[5].
+DSP Report: Generating DSP u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1, operation Mode is: A*B.
+DSP Report: operator u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1 is absorbed into DSP u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/multiply_out1.
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[15]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[14]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[13]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[12]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[11]
+WARNING: [Synth 8-3331] design Accumulator_with_Switches has unconnected port read_address[10]
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"Accumulator:/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "Accumulator:/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg"
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/Selector1_out1_1_reg[15]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough/u_MATLAB_Function/state_reg[2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_2_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_2_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_2_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_1_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_1_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_1_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_4_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_4_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_4_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[3][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[2][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[1][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[0][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[5][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[3][1]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[2][1]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[1][1]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[0][1]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[5][1]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][1]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[3][2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[2][2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[1][2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[0][2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[5][2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[5][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][2]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/kconst_1_reg[1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/kconst_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/kconst_1_reg[4]' (FDCE) to 'u_Hybrid_LHT_Accumulator/kconst_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/kconst_1_reg[3]' (FDCE) to 'u_Hybrid_LHT_Accumulator/kconst_1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/kconst_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[3][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[2][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[0][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[5][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/\u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Hybrid_LHT_Kernel/u_Extract_Active_Votes/\Gain1_out1_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[3][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[3][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[2][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[2][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[0][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[0][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[5][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[5][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[4][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[4][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/Extract_Active_Votes_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_2_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_2_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_2_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_1_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_1_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_1_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_4_reg[1][7]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_4_reg[1][6]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_4_reg[1][5]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[3][1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[3][2]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[2][1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[2][2]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[1][1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[1][2]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[0][1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[0][2]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[5][1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[5][2]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[5][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/\u_Get_Index_and_Fix_Limits/Gain_out1_1_reg[4][5] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[4][1]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/shift_2_reg[4][2]' (FDCE) to 'u_Hybrid_LHT_Accumulator/shift_2_reg[4][4]'
+WARNING: [Synth 8-3332] Sequential element (u_Hybrid_LHT_Accumulator/Gain_out1_1_reg__3) is unused and will be removed from module Hybrid_LHT.
+WARNING: [Synth 8-3332] Sequential element (u_Hybrid_LHT_Accumulator/Gain_out1_1_reg__4) is unused and will be removed from module Hybrid_LHT.
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[3].u_Accumulator/Delay4_out1_reg[5]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[3].u_Accumulator/Delay4_out1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches /\GEN_LABEL[3].u_Accumulator /\Delay4_out1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[2].u_Accumulator/Delay4_out1_reg[5]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[2].u_Accumulator/Delay4_out1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches /\GEN_LABEL[2].u_Accumulator /\Delay4_out1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[1].u_Accumulator/Delay4_out1_reg[5]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[1].u_Accumulator/Delay4_out1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches /\GEN_LABEL[1].u_Accumulator /\Delay4_out1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[0].u_Accumulator/Delay4_out1_reg[5]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[0].u_Accumulator/Delay4_out1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches /\GEN_LABEL[0].u_Accumulator /\Delay4_out1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[5].u_Accumulator/Delay4_out1_reg[5]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[5].u_Accumulator/Delay4_out1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches /\GEN_LABEL[5].u_Accumulator /\Delay4_out1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[4].u_Accumulator/Delay4_out1_reg[5]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[4].u_Accumulator/Delay4_out1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches /\GEN_LABEL[4].u_Accumulator /\Delay4_out1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[15]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[11]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[10]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[14]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[12]' (FDCE) to 'u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/rho_counter_reg[13] )
+INFO: [Synth 8-3886] merging instance 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_3_reg[0][0]' (FDCE) to 'u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/delayMatch_1_reg_5_reg[0][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1554.648 ; gain = 195.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|Hough_Kernel | p_0_out    | 32x16         | LUT            | 
+|Hough_Kernel | p_0_out    | 32x16         | LUT            | 
+|Hough_Kernel | p_0_out    | 32x16         | LUT            | 
+|Hough_Kernel | p_0_out    | 32x16         | LUT            | 
+|Hough_Kernel | p_0_out    | 32x16         | LUT            | 
+|Hough_Kernel | p_0_out    | 32x16         | LUT            | 
++-------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Hough_Kernel     | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Hough_Kernel     | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Hough_Kernel     | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Hough_Kernel     | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Hough_Kernel     | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Hough_Kernel     | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Look_Ahead_Hough | A*B         | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:476]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:492]
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[0].u_Accumulator/i_0/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[1].u_Accumulator/i_0/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[2].u_Accumulator/i_0/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[3].u_Accumulator/i_0/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[4].u_Accumulator/i_0/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[5].u_Accumulator/i_0/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2121.059 ; gain = 761.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2168.418 ; gain = 809.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
+|SimpleDualPortRAM_generic: | ram_reg    | 1 K x 36(READ_FIRST)   | W |   | 1 K x 36(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 1               | 
++---------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:430]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:430]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:430]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:430]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:430]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:430]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:506]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:262]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Hough_Kernel.vhd:92]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:476]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/hdlsrc/hybrid_lht/Look_Ahead_Hough.vhd:492]
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[0].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[1].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[2].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[3].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[4].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[5].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2210.938 ; gain = 851.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    12|
+|2     |DSP_ALU         |     7|
+|3     |DSP_A_B_DATA    |     7|
+|4     |DSP_C_DATA      |     7|
+|5     |DSP_MULTIPLIER  |     7|
+|6     |DSP_M_DATA      |     7|
+|7     |DSP_OUTPUT_1    |     7|
+|8     |DSP_PREADD      |     7|
+|9     |DSP_PREADD_DATA |     7|
+|10    |LUT1            |     3|
+|11    |LUT2            |   200|
+|12    |LUT3            |   346|
+|13    |LUT4            |   348|
+|14    |LUT5            |   433|
+|15    |LUT6            |   928|
+|16    |MUXF7           |    60|
+|17    |RAMB36E2        |     6|
+|18    |FDCE            |  1132|
+|19    |FDPE            |    10|
++------+----------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+----------------------------------------------------------------------------------------------------+------+
+|      |Instance                                   |Module                                                                                              |Cells |
++------+-------------------------------------------+----------------------------------------------------------------------------------------------------+------+
+|1     |top                                        |                                                                                                    |  3534|
+|2     |  u_Hybrid_LHT_Accumulator                 |Hybrid_LHT_Accumulator                                                                              |  1592|
+|3     |    u_Accumulator_Controller               |Accumulator_Controller                                                                              |   167|
+|4     |    u_Accumulator_with_Switches            |Accumulator_with_Switches                                                                           |  1325|
+|5     |      \GEN_LABEL[0].u_Accumulator          |Accumulator                                                                                         |   205|
+|6     |        u_Block_RAM                        |Block_RAM_34                                                                                        |   150|
+|7     |          u_Simple_Dual_Port_RAM_Generator |Simple_Dual_Port_RAM_Generator_35                                                                   |   150|
+|8     |            u_simple_ram_0                 |SimpleDualPortRAM_generic_36                                                                        |   150|
+|9     |      \GEN_LABEL[1].u_Accumulator          |Accumulator_17                                                                                      |   205|
+|10    |        u_Block_RAM                        |Block_RAM_31                                                                                        |   150|
+|11    |          u_Simple_Dual_Port_RAM_Generator |Simple_Dual_Port_RAM_Generator_32                                                                   |   150|
+|12    |            u_simple_ram_0                 |SimpleDualPortRAM_generic_33                                                                        |   150|
+|13    |      \GEN_LABEL[2].u_Accumulator          |Accumulator_18                                                                                      |   205|
+|14    |        u_Block_RAM                        |Block_RAM_28                                                                                        |   150|
+|15    |          u_Simple_Dual_Port_RAM_Generator |Simple_Dual_Port_RAM_Generator_29                                                                   |   150|
+|16    |            u_simple_ram_0                 |SimpleDualPortRAM_generic_30                                                                        |   150|
+|17    |      \GEN_LABEL[3].u_Accumulator          |Accumulator_19                                                                                      |   225|
+|18    |        u_Block_RAM                        |Block_RAM_25                                                                                        |   170|
+|19    |          u_Simple_Dual_Port_RAM_Generator |Simple_Dual_Port_RAM_Generator_26                                                                   |   170|
+|20    |            u_simple_ram_0                 |SimpleDualPortRAM_generic_27                                                                        |   170|
+|21    |      \GEN_LABEL[4].u_Accumulator          |Accumulator_20                                                                                      |   205|
+|22    |        u_Block_RAM                        |Block_RAM_22                                                                                        |   149|
+|23    |          u_Simple_Dual_Port_RAM_Generator |Simple_Dual_Port_RAM_Generator_23                                                                   |   149|
+|24    |            u_simple_ram_0                 |SimpleDualPortRAM_generic_24                                                                        |   149|
+|25    |      \GEN_LABEL[5].u_Accumulator          |Accumulator_21                                                                                      |   205|
+|26    |        u_Block_RAM                        |Block_RAM                                                                                           |   150|
+|27    |          u_Simple_Dual_Port_RAM_Generator |Simple_Dual_Port_RAM_Generator                                                                      |   150|
+|28    |            u_simple_ram_0                 |SimpleDualPortRAM_generic                                                                           |   150|
+|29    |  u_Hybrid_LHT_Kernel                      |Hybrid_LHT_Kernel                                                                                   |  1938|
+|30    |    u_Extract_Active_Votes                 |Extract_Active_Votes                                                                                |    80|
+|31    |      u_GetShift                           |GetShift                                                                                            |     1|
+|32    |    u_Gradient_Kernel_System               |Gradient_Kernel_System                                                                              |  1758|
+|33    |      u_Get_Index_and_Fix_Limits           |Get_Index_and_Fix_Limits                                                                            |    36|
+|34    |      u_Hough_Kernel                       |Hough_Kernel_block                                                                                  |  1722|
+|35    |        u_Hough_Kernel                     |Hough_Kernel                                                                                        |   784|
+|36    |          \xcos_out1[0]                    |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel     |     8|
+|37    |          \xcos_out1[1]                    |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel__1  |     8|
+|38    |          \xcos_out1[2]                    |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel__2  |     8|
+|39    |          \xcos_out1[3]                    |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel__3  |     8|
+|40    |          \xcos_out1[4]                    |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel__4  |     8|
+|41    |          \xcos_out1[5]                    |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel__5  |     8|
+|42    |        u_Look_Ahead_Hough                 |Look_Ahead_Hough_block                                                                              |   938|
+|43    |          u_Look_Ahead_Hough               |Look_Ahead_Hough                                                                                    |   938|
+|44    |            multiply_out1                  |\u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/xcos_out1[0]_funnel__6  |     8|
+|45    |            u_MATLAB_Function              |MATLAB_Function                                                                                     |   113|
+|46    |            u_Register_Bank_instance1      |Register_Bank                                                                                       |    11|
+|47    |            u_Register_Bank_instance10     |Register_Bank_0                                                                                     |    11|
+|48    |            u_Register_Bank_instance11     |Register_Bank_1                                                                                     |    11|
+|49    |            u_Register_Bank_instance12     |Register_Bank_2                                                                                     |    11|
+|50    |            u_Register_Bank_instance13     |Register_Bank_3                                                                                     |    11|
+|51    |            u_Register_Bank_instance14     |Register_Bank_4                                                                                     |    11|
+|52    |            u_Register_Bank_instance15     |Register_Bank_5                                                                                     |    11|
+|53    |            u_Register_Bank_instance16     |Register_Bank_6                                                                                     |    11|
+|54    |            u_Register_Bank_instance17     |Register_Bank_7                                                                                     |    11|
+|55    |            u_Register_Bank_instance18     |Register_Bank_8                                                                                     |    29|
+|56    |            u_Register_Bank_instance2      |Register_Bank_9                                                                                     |    11|
+|57    |            u_Register_Bank_instance3      |Register_Bank_10                                                                                    |    11|
+|58    |            u_Register_Bank_instance4      |Register_Bank_11                                                                                    |    11|
+|59    |            u_Register_Bank_instance5      |Register_Bank_12                                                                                    |    11|
+|60    |            u_Register_Bank_instance6      |Register_Bank_13                                                                                    |    11|
+|61    |            u_Register_Bank_instance7      |Register_Bank_14                                                                                    |    11|
+|62    |            u_Register_Bank_instance8      |Register_Bank_15                                                                                    |    11|
+|63    |            u_Register_Bank_instance9      |Register_Bank_16                                                                                    |    11|
++------+-------------------------------------------+----------------------------------------------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 2224.758 ; gain = 711.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 2224.758 ; gain = 865.453
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2249.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+269 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 2249.297 ; gain = 1952.934
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2249.297 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/hybrid_lht/models/hybrid_lht/hdl_prj_600_Elhossini/vivado_prj/Hybrid_LHT_vivado.runs/synth_1/Hybrid_LHT.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Hybrid_LHT_utilization_synth.rpt -pb Hybrid_LHT_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 10:36:44 2020...

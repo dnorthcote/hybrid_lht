@@ -1,0 +1,18 @@
+SLStudio.Utils.RemoveHighlighting(get_param('hybrid_lht', 'handle'));
+SLStudio.Utils.RemoveHighlighting(get_param('gm_hybrid_lht', 'handle'));
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/MATLAB Function', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/MATLAB Function', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/Constant', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/Constant', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/Constant1', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/Constant1', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/SineROM', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/SineROM', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/row_0', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/row_0', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/theta_index', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/theta_index', 0, 1, '');
+annotate_port('gm_hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/Relational Operator', 0, 1, '');
+annotate_port('hybrid_lht/Hybrid LHT/Hybrid LHT Kernel/Gradient Kernel System/Hough Kernel/Look Ahead Hough/Look Ahead Hough/Relational Operator', 0, 1, '');

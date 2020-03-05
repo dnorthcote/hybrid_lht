@@ -1,0 +1,177 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Mar  5 11:44:48 2020
+| Host         : eee-bumblebee running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Hybrid_LHT_control_sets_placed.rpt
+| Design       : Hybrid_LHT
+| Device       : xczu7ev
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    99 |
+|    Minimum number of control sets                        |    99 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   285 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    99 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    94 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              24 |            2 |
+| Yes          | No                    | Yes                    |            6071 |         2309 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+| Clock Signal |                                                                                Enable Signal                                                                               | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance6/Unit_Delay_Enabled_Synchronous_out1  | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance60/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance12/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance29/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance3/Unit_Delay_Enabled_Synchronous_out1  | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance30/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance31/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance32/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance33/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance34/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance36/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance35/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance37/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance38/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance13/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance4/Unit_Delay_Enabled_Synchronous_out1  | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance39/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance40/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance42/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance41/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance44/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance43/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance45/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance46/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance14/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance47/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance48/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance49/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance5/Unit_Delay_Enabled_Synchronous_out1  | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance50/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance51/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance53/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance52/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance54/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance55/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance15/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance57/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance56/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance58/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance59/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance91/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance19/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Accumulator/HDL_Counter_out1_1                                                                                                                                | reset            |                2 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/X_Counter_out1[8]_i_1_n_0                                                                                                                              | reset            |                2 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/Y_Counter_out1                                                                                                                                         | reset            |                2 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance26/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance27/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance28/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance1/Unit_Delay_Enabled_Synchronous_out1  | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance10/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance11/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance2/Unit_Delay_Enabled_Synchronous_out1  | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance20/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance21/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance22/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance24/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance23/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance25/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance61/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance62/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance63/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance64/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance65/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance66/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance67/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance68/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance69/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance70/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance7/Unit_Delay_Enabled_Synchronous_out1  | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance71/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance72/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance73/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance17/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance74/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance75/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance77/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance76/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance78/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance79/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance8/Unit_Delay_Enabled_Synchronous_out1  | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance81/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance80/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance82/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance83/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance18/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance84/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance85/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance86/Unit_Delay_Enabled_Synchronous_out1 | reset            |                8 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance88/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance87/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance9/Unit_Delay_Enabled_Synchronous_out1  | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance89/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance90/Unit_Delay_Enabled_Synchronous_out1 | reset            |                9 |              9 |
+|  clk         | u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/theta_counter_1                                                                                                          | reset            |                6 |             16 |
+|  clk         | u_Hybrid_LHT_Accumulator/u_Accumulator_Controller/shift_counter_0                                                                                                          | reset            |                4 |             16 |
+|  clk         | clk_enable                                                                                                                                                                 |                  |                2 |             24 |
+|  clk         | u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1[0]__0                      | reset            |              241 |            819 |
+|  clk         | clk_enable                                                                                                                                                                 | reset            |             1938 |           4374 |
++--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+
+

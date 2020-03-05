@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar  5 10:27:16 2020
+# Process ID: 84740
+# Current directory: C:/hybrid_lht/models/hybrid_lht/hdl_prj_768_Lu/vivado_prj
+# Command line: vivado.exe -mode batch -notrace -source Hybrid_LHT_Xilinx_Vivado_run.tcl
+# Log file: C:/hybrid_lht/models/hybrid_lht/hdl_prj_768_Lu/vivado_prj/vivado.log
+# Journal file: C:/hybrid_lht/models/hybrid_lht/hdl_prj_768_Lu/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+source Hybrid_LHT_Xilinx_Vivado_run.tcl -notrace

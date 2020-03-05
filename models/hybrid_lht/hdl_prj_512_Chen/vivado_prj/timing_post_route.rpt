@@ -1,0 +1,1262 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date              : Thu Mar  5 11:30:50 2020
+| Host              : eee-bumblebee running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 3 -nworst 3 -name timing_post_route -file timing_post_route.rpt
+| Design            : Hybrid_LHT
+| Device            : xczu7ev-ffvc1156
+| Speed File        : -2  PRODUCTION 1.25 05-09-2019
+| Temperature Grade : E
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 14 input ports with no input delay specified. (HIGH)
+
+clk_enable
+reset
+s_axis_tdata[0]
+s_axis_tdata[1]
+s_axis_tdata[2]
+s_axis_tdata[3]
+s_axis_tdata[4]
+s_axis_tdata[5]
+s_axis_tdata[6]
+s_axis_tdata[7]
+s_axis_tdata[8]
+s_axis_tlast
+s_axis_tuser
+s_axis_tvalid
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 13 ports with no output delay specified. (HIGH)
+
+m_axis_tdata[0]
+m_axis_tdata[1]
+m_axis_tdata[2]
+m_axis_tdata[3]
+m_axis_tdata[4]
+m_axis_tdata[5]
+m_axis_tdata[6]
+m_axis_tdata[7]
+m_axis_tdata[8]
+m_axis_tdata[9]
+m_axis_tlast
+m_axis_tuser
+m_axis_tvalid
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.201        0.000                      0                14147        0.040        0.000                      0                14147        3.625        0.000                       0                  7865  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+MWCLK  {0.000 4.167}        8.333           120.005         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+MWCLK               0.201        0.000                      0                14147        0.040        0.000                      0                14147        3.625        0.000                       0                  7865  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+(none)        MWCLK                       
+(none)                      MWCLK         
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  MWCLK
+  To Clock:  MWCLK
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.201ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.040ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.625ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.201ns  (required time - arrival time)
+  Source:                 u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/ADDRBWRADDR[12]
+                            (rising edge-triggered cell RAMB36E2 clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.333ns  (MWCLK rise@8.333ns - MWCLK rise@0.000ns)
+  Data Path Delay:        7.824ns  (logic 1.488ns (19.018%)  route 6.336ns (80.982%))
+  Logic Levels:           15  (CARRY8=1 LUT2=1 LUT3=2 LUT5=1 LUT6=7 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 8.373 - 8.333 ) 
+    Source Clock Delay      (SCD):    0.029ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.029     0.029    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/clk
+    SLICE_X100Y186       FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y186       FDCE (Prop_HFF_SLICEL_C_Q)
+                                                      0.079     0.108 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/Q
+                         net (fo=130, routed)         0.752     0.860    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21_n_0
+    SLICE_X99Y180        LUT2 (Prop_C6LUT_SLICEL_I1_O)
+                                                      0.050     0.910 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_4898/O
+                         net (fo=22, routed)          0.636     1.546    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Look_Ahead_Hough_out1[79]_563[1]
+    SLICE_X98Y145        LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.123     1.669 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3295__0/O
+                         net (fo=10, routed)          0.292     1.961    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3295__0_n_0
+    SLICE_X97Y139        LUT6 (Prop_D6LUT_SLICEL_I3_O)
+                                                      0.146     2.107 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_9417/O
+                         net (fo=1, routed)           0.009     2.116    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_9417_n_0
+    SLICE_X97Y139        MUXF7 (Prop_F7MUX_CD_SLICEL_I0_O)
+                                                      0.063     2.179 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_5775/O
+                         net (fo=1, routed)           0.266     2.445    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_5775_n_0
+    SLICE_X97Y139        LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.099     2.544 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3535/O
+                         net (fo=1, routed)           0.575     3.119    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_855_3
+    SLICE_X80Y122        LUT6 (Prop_B6LUT_SLICEL_I1_O)
+                                                      0.090     3.209 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_1696/O
+                         net (fo=1, routed)           0.009     3.218    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_1696_n_0
+    SLICE_X80Y122        CARRY8 (Prop_CARRY8_SLICEL_S[1]_O[2])
+                                                      0.114     3.332 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_855/O[2]
+                         net (fo=5, routed)           0.290     3.622    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/Rho[37][2]
+    SLICE_X79Y119        LUT6 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.152     3.774 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_854/O
+                         net (fo=4, routed)           0.229     4.003    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_854_n_0
+    SLICE_X77Y117        LUT3 (Prop_B5LUT_SLICEL_I1_O)
+                                                      0.165     4.168 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_795/O
+                         net (fo=6, routed)           0.505     4.673    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/Gradient_Kernel_System_out2[37]_285[7]
+    SLICE_X69Y106        LUT5 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.149     4.822 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_307/O
+                         net (fo=3, routed)           0.628     5.450    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_307_n_0
+    SLICE_X65Y101        LUT3 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.096     5.546 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_282/O
+                         net (fo=11, routed)          1.007     6.553    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_282_n_0
+    SLICE_X74Y76         LUT6 (Prop_B6LUT_SLICEM_I3_O)
+                                                      0.037     6.590 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_171__19/O
+                         net (fo=1, routed)           0.017     6.607    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_171__19_n_0
+    SLICE_X74Y76         MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     6.667 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_116__18/O
+                         net (fo=1, routed)           0.000     6.667    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_116__18_n_0
+    SLICE_X74Y76         MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     6.695 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_49__18/O
+                         net (fo=1, routed)           0.338     7.033    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_49__18_n_0
+    SLICE_X78Y67         LUT6 (Prop_G6LUT_SLICEM_I3_O)
+                                                      0.037     7.070 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_3__50/O
+                         net (fo=3, routed)           0.783     7.853    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_1[7]
+    RAMB36_X3Y5          RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/ADDRBWRADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      8.333     8.333 r  
+                                                      0.000     8.333 r  clk (IN)
+                         net (fo=8170, unset)         0.040     8.373    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/clk
+    RAMB36_X3Y5          RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000     8.373    
+                         clock uncertainty           -0.035     8.338    
+    RAMB36_X3Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_ADDRBWRADDR[12])
+                                                     -0.284     8.054    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          8.054    
+                         arrival time                          -7.853    
+  -------------------------------------------------------------------
+                         slack                                  0.201    
+
+Slack (MET) :             0.201ns  (required time - arrival time)
+  Source:                 u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/ADDRBWRADDR[12]
+                            (rising edge-triggered cell RAMB36E2 clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.333ns  (MWCLK rise@8.333ns - MWCLK rise@0.000ns)
+  Data Path Delay:        7.824ns  (logic 1.488ns (19.018%)  route 6.336ns (80.982%))
+  Logic Levels:           15  (CARRY8=1 LUT2=1 LUT3=2 LUT5=1 LUT6=7 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 8.373 - 8.333 ) 
+    Source Clock Delay      (SCD):    0.029ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.029     0.029    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/clk
+    SLICE_X100Y186       FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y186       FDCE (Prop_HFF_SLICEL_C_Q)
+                                                      0.079     0.108 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/Q
+                         net (fo=130, routed)         0.752     0.860    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21_n_0
+    SLICE_X99Y180        LUT2 (Prop_C6LUT_SLICEL_I1_O)
+                                                      0.050     0.910 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_4898/O
+                         net (fo=22, routed)          0.636     1.546    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Look_Ahead_Hough_out1[79]_563[1]
+    SLICE_X98Y145        LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.123     1.669 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3295__0/O
+                         net (fo=10, routed)          0.292     1.961    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3295__0_n_0
+    SLICE_X97Y139        LUT6 (Prop_D6LUT_SLICEL_I3_O)
+                                                      0.146     2.107 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_9417/O
+                         net (fo=1, routed)           0.009     2.116    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_9417_n_0
+    SLICE_X97Y139        MUXF7 (Prop_F7MUX_CD_SLICEL_I0_O)
+                                                      0.063     2.179 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_5775/O
+                         net (fo=1, routed)           0.266     2.445    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_5775_n_0
+    SLICE_X97Y139        LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.099     2.544 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3535/O
+                         net (fo=1, routed)           0.575     3.119    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_855_3
+    SLICE_X80Y122        LUT6 (Prop_B6LUT_SLICEL_I1_O)
+                                                      0.090     3.209 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_1696/O
+                         net (fo=1, routed)           0.009     3.218    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_1696_n_0
+    SLICE_X80Y122        CARRY8 (Prop_CARRY8_SLICEL_S[1]_O[2])
+                                                      0.114     3.332 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_855/O[2]
+                         net (fo=5, routed)           0.290     3.622    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/Rho[37][2]
+    SLICE_X79Y119        LUT6 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.152     3.774 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_854/O
+                         net (fo=4, routed)           0.229     4.003    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_854_n_0
+    SLICE_X77Y117        LUT3 (Prop_B5LUT_SLICEL_I1_O)
+                                                      0.165     4.168 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_795/O
+                         net (fo=6, routed)           0.505     4.673    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/Gradient_Kernel_System_out2[37]_285[7]
+    SLICE_X69Y106        LUT5 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.149     4.822 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_307/O
+                         net (fo=3, routed)           0.628     5.450    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_307_n_0
+    SLICE_X65Y101        LUT3 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.096     5.546 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_282/O
+                         net (fo=11, routed)          1.007     6.553    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_282_n_0
+    SLICE_X74Y76         LUT6 (Prop_B6LUT_SLICEM_I3_O)
+                                                      0.037     6.590 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_171__19/O
+                         net (fo=1, routed)           0.017     6.607    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_171__19_n_0
+    SLICE_X74Y76         MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     6.667 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_116__18/O
+                         net (fo=1, routed)           0.000     6.667    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_116__18_n_0
+    SLICE_X74Y76         MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     6.695 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_49__18/O
+                         net (fo=1, routed)           0.338     7.033    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_49__18_n_0
+    SLICE_X78Y67         LUT6 (Prop_G6LUT_SLICEM_I3_O)
+                                                      0.037     7.070 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_3__50/O
+                         net (fo=3, routed)           0.783     7.853    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_1[7]
+    RAMB36_X3Y5          RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/ADDRBWRADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      8.333     8.333 r  
+                                                      0.000     8.333 r  clk (IN)
+                         net (fo=8170, unset)         0.040     8.373    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/clk
+    RAMB36_X3Y5          RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000     8.373    
+                         clock uncertainty           -0.035     8.338    
+    RAMB36_X3Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_ADDRBWRADDR[12])
+                                                     -0.284     8.054    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          8.054    
+                         arrival time                          -7.853    
+  -------------------------------------------------------------------
+                         slack                                  0.201    
+
+Slack (MET) :             0.201ns  (required time - arrival time)
+  Source:                 u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/ADDRBWRADDR[12]
+                            (rising edge-triggered cell RAMB36E2 clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.333ns  (MWCLK rise@8.333ns - MWCLK rise@0.000ns)
+  Data Path Delay:        7.824ns  (logic 1.488ns (19.018%)  route 6.336ns (80.982%))
+  Logic Levels:           15  (CARRY8=1 LUT2=1 LUT3=2 LUT5=1 LUT6=7 MUXF7=2 MUXF8=1)
+  Clock Path Skew:        0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.040ns = ( 8.373 - 8.333 ) 
+    Source Clock Delay      (SCD):    0.029ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.029     0.029    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/clk
+    SLICE_X100Y186       FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y186       FDCE (Prop_HFF_SLICEL_C_Q)
+                                                      0.079     0.108 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21/Q
+                         net (fo=130, routed)         0.752     0.860    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/delayMatch_reg_reg[1]_rep__21_n_0
+    SLICE_X99Y180        LUT2 (Prop_C6LUT_SLICEL_I1_O)
+                                                      0.050     0.910 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_4898/O
+                         net (fo=22, routed)          0.636     1.546    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Look_Ahead_Hough_out1[79]_563[1]
+    SLICE_X98Y145        LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.123     1.669 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3295__0/O
+                         net (fo=10, routed)          0.292     1.961    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3295__0_n_0
+    SLICE_X97Y139        LUT6 (Prop_D6LUT_SLICEL_I3_O)
+                                                      0.146     2.107 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_9417/O
+                         net (fo=1, routed)           0.009     2.116    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_9417_n_0
+    SLICE_X97Y139        MUXF7 (Prop_F7MUX_CD_SLICEL_I0_O)
+                                                      0.063     2.179 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_5775/O
+                         net (fo=1, routed)           0.266     2.445    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_5775_n_0
+    SLICE_X97Y139        LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.099     2.544 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/ram_reg_bram_0_i_3535/O
+                         net (fo=1, routed)           0.575     3.119    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_855_3
+    SLICE_X80Y122        LUT6 (Prop_B6LUT_SLICEL_I1_O)
+                                                      0.090     3.209 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_1696/O
+                         net (fo=1, routed)           0.009     3.218    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_1696_n_0
+    SLICE_X80Y122        CARRY8 (Prop_CARRY8_SLICEL_S[1]_O[2])
+                                                      0.114     3.332 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/ram_reg_bram_0_i_855/O[2]
+                         net (fo=5, routed)           0.290     3.622    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/Rho[37][2]
+    SLICE_X79Y119        LUT6 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.152     3.774 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_854/O
+                         net (fo=4, routed)           0.229     4.003    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_854_n_0
+    SLICE_X77Y117        LUT3 (Prop_B5LUT_SLICEL_I1_O)
+                                                      0.165     4.168 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_795/O
+                         net (fo=6, routed)           0.505     4.673    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/Gradient_Kernel_System_out2[37]_285[7]
+    SLICE_X69Y106        LUT5 (Prop_G6LUT_SLICEL_I0_O)
+                                                      0.149     4.822 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_307/O
+                         net (fo=3, routed)           0.628     5.450    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_307_n_0
+    SLICE_X65Y101        LUT3 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.096     5.546 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_282/O
+                         net (fo=11, routed)          1.007     6.553    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_282_n_0
+    SLICE_X74Y76         LUT6 (Prop_B6LUT_SLICEM_I3_O)
+                                                      0.037     6.590 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_171__19/O
+                         net (fo=1, routed)           0.017     6.607    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_171__19_n_0
+    SLICE_X74Y76         MUXF7 (Prop_F7MUX_AB_SLICEM_I0_O)
+                                                      0.060     6.667 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_116__18/O
+                         net (fo=1, routed)           0.000     6.667    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_116__18_n_0
+    SLICE_X74Y76         MUXF8 (Prop_F8MUX_BOT_SLICEM_I1_O)
+                                                      0.028     6.695 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_49__18/O
+                         net (fo=1, routed)           0.338     7.033    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_49__18_n_0
+    SLICE_X78Y67         LUT6 (Prop_G6LUT_SLICEM_I3_O)
+                                                      0.037     7.070 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/ram_reg_bram_0_i_3__50/O
+                         net (fo=3, routed)           0.783     7.853    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_1[7]
+    RAMB36_X3Y5          RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/ADDRBWRADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      8.333     8.333 r  
+                                                      0.000     8.333 r  clk (IN)
+                         net (fo=8170, unset)         0.040     8.373    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/clk
+    RAMB36_X3Y5          RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+                         clock pessimism              0.000     8.373    
+                         clock uncertainty           -0.035     8.338    
+    RAMB36_X3Y5          RAMB36E2 (Setup_RAMB36E2_RAMB36_CLKBWRCLK_ADDRBWRADDR[12])
+                                                     -0.284     8.054    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[55].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0
+  -------------------------------------------------------------------
+                         required time                          8.054    
+                         arrival time                          -7.853    
+  -------------------------------------------------------------------
+                         slack                                  0.201    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.040ns  (arrival time - required time)
+  Source:                 u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]/D
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.094ns  (logic 0.039ns (41.489%)  route 0.055ns (58.511%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.007ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.019ns
+    Source Clock Delay      (SCD):    0.012ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.012     0.012    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/clk
+    SLICE_X95Y210        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y210        FDCE (Prop_AFF_SLICEL_C_Q)
+                                                      0.039     0.051 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1_reg[7]/Q
+                         net (fo=1, routed)           0.055     0.106    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16_n_1
+    SLICE_X95Y210        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.019     0.019    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/clk
+    SLICE_X95Y210        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]/C
+                         clock pessimism              0.000     0.019    
+    SLICE_X95Y210        FDCE (Hold_HFF2_SLICEL_C_D)
+                                                      0.047     0.066    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]
+  -------------------------------------------------------------------
+                         required time                         -0.066    
+                         arrival time                           0.106    
+  -------------------------------------------------------------------
+                         slack                                  0.040    
+
+Slack (MET) :             0.040ns  (arrival time - required time)
+  Source:                 u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]/D
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.094ns  (logic 0.039ns (41.489%)  route 0.055ns (58.511%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.007ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.019ns
+    Source Clock Delay      (SCD):    0.012ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.012     0.012    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/clk
+    SLICE_X95Y210        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y210        FDCE (Prop_AFF_SLICEL_C_Q)
+                                                      0.039     0.051 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16/Unit_Delay_Enabled_Synchronous_out1_reg[7]/Q
+                         net (fo=1, routed)           0.055     0.106    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance16_n_1
+    SLICE_X95Y210        FDCE                                         f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.019     0.019    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/clk
+    SLICE_X95Y210        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]/C
+                         clock pessimism              0.000     0.019    
+    SLICE_X95Y210        FDCE (Hold_HFF2_SLICEL_C_D)
+                                                      0.047     0.066    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[15][7]
+  -------------------------------------------------------------------
+                         required time                         -0.066    
+                         arrival time                           0.106    
+  -------------------------------------------------------------------
+                         slack                                  0.040    
+
+Slack (MET) :             0.043ns  (arrival time - required time)
+  Source:                 u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance46/Unit_Delay_Enabled_Synchronous_out1_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[45][5]/D
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.096ns  (logic 0.039ns (40.625%)  route 0.057ns (59.375%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.006ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.019ns
+    Source Clock Delay      (SCD):    0.013ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.013     0.013    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance46/clk
+    SLICE_X87Y217        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance46/Unit_Delay_Enabled_Synchronous_out1_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X87Y217        FDCE (Prop_HFF_SLICEL_C_Q)
+                                                      0.039     0.052 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance46/Unit_Delay_Enabled_Synchronous_out1_reg[5]/Q
+                         net (fo=1, routed)           0.057     0.109    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/u_Register_Bank_instance46_n_3
+    SLICE_X87Y216        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[45][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.019     0.019    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/clk
+    SLICE_X87Y216        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[45][5]/C
+                         clock pessimism              0.000     0.019    
+    SLICE_X87Y216        FDCE (Hold_EFF2_SLICEL_C_D)
+                                                      0.047     0.066    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Look_Ahead_Hough/u_Look_Ahead_Hough_Symmetric/Unit_Delay_Enabled_Synchronous_out1_reg[45][5]
+  -------------------------------------------------------------------
+                         required time                         -0.066    
+                         arrival time                           0.109    
+  -------------------------------------------------------------------
+                         slack                                  0.043    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         MWCLK
+Waveform(ns):       { 0.000 4.167 }
+Period(ns):         8.333
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.569         8.333       6.764      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.569         8.333       6.764      RAMB36_X1Y21  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[45].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.569         8.333       6.764      RAMB36_X1Y18  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[46].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.542         4.167       3.625      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+Low Pulse Width   Fast    RAMB36E2/CLKARDCLK  n/a            0.542         4.167       3.625      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKBWRCLK  n/a            0.542         4.167       3.625      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.542         4.167       3.625      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+High Pulse Width  Fast    RAMB36E2/CLKARDCLK  n/a            0.542         4.167       3.625      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKBWRCLK  n/a            0.542         4.167       3.625      RAMB36_X2Y22  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[44].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Fast Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  MWCLK
+  To Clock:  
+
+Max Delay            13 Endpoints
+Min Delay            13 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            m_axis_tdata[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.086ns  (logic 1.525ns (25.058%)  route 4.561ns (74.942%))
+  Logic Levels:           7  (LUT5=2 LUT6=4 MUXF7=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.076     0.076    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/clk
+    RAMB36_X2Y15         RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y15         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[28])
+                                                      0.852     0.928 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/DOUTBDOUT[28]
+                         net (fo=2, routed)           1.390     2.318    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/rd_data[28]
+    SLICE_X63Y68         LUT6 (Prop_G6LUT_SLICEM_I5_O)
+                                                      0.090     2.408 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_214__34/O
+                         net (fo=2, routed)           0.266     2.674    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_214__34_n_0
+    SLICE_X65Y66         LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.090     2.764 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_197__38/O
+                         net (fo=3, routed)           0.119     2.883    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_197__38_n_0
+    SLICE_X65Y66         LUT5 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.157     3.040 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_147__38/O
+                         net (fo=10, routed)          1.190     4.230    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_147__38_n_0
+    SLICE_X92Y71         LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.099     4.329 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_26/O
+                         net (fo=1, routed)           0.009     4.338    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_26_n_0
+    SLICE_X92Y71         MUXF7 (Prop_F7MUX_CD_SLICEL_I0_O)
+                                                      0.063     4.401 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_11/O
+                         net (fo=1, routed)           1.292     5.693    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[27].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_0
+    SLICE_X62Y65         LUT6 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.124     5.817 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[27].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_3/O
+                         net (fo=1, routed)           0.295     6.112    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[59].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata_0_sn_1
+    SLICE_X62Y65         LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.050     6.162 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[59].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0/O
+                         net (fo=0)                   0.000     6.162    m_axis_tdata[0]
+                                                                      r  m_axis_tdata[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            m_axis_tdata[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.086ns  (logic 1.525ns (25.058%)  route 4.561ns (74.942%))
+  Logic Levels:           7  (LUT5=2 LUT6=4 MUXF7=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.076     0.076    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/clk
+    RAMB36_X2Y15         RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y15         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[28])
+                                                      0.852     0.928 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/DOUTBDOUT[28]
+                         net (fo=2, routed)           1.390     2.318    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/rd_data[28]
+    SLICE_X63Y68         LUT6 (Prop_G6LUT_SLICEM_I5_O)
+                                                      0.090     2.408 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_214__34/O
+                         net (fo=2, routed)           0.266     2.674    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_214__34_n_0
+    SLICE_X65Y66         LUT5 (Prop_A6LUT_SLICEL_I0_O)
+                                                      0.090     2.764 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_197__38/O
+                         net (fo=3, routed)           0.119     2.883    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_197__38_n_0
+    SLICE_X65Y66         LUT5 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.157     3.040 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_147__38/O
+                         net (fo=10, routed)          1.190     4.230    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_147__38_n_0
+    SLICE_X92Y71         LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.099     4.329 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_26/O
+                         net (fo=1, routed)           0.009     4.338    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_26_n_0
+    SLICE_X92Y71         MUXF7 (Prop_F7MUX_CD_SLICEL_I0_O)
+                                                      0.063     4.401 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_11/O
+                         net (fo=1, routed)           1.292     5.693    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[27].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_0
+    SLICE_X62Y65         LUT6 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.124     5.817 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[27].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_3/O
+                         net (fo=1, routed)           0.295     6.112    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[59].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata_0_sn_1
+    SLICE_X62Y65         LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.050     6.162 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[59].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0/O
+                         net (fo=0)                   0.000     6.162    m_axis_tdata[0]
+                                                                      f  m_axis_tdata[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            m_axis_tdata[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.080ns  (logic 1.633ns (26.859%)  route 4.447ns (73.141%))
+  Logic Levels:           7  (LUT3=1 LUT5=2 LUT6=3 MUXF7=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.076     0.076    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/clk
+    RAMB36_X2Y15         RAMB36E2                                     r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y15         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_DOUTBDOUT[20])
+                                                      0.870     0.946 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0/DOUTBDOUT[20]
+                         net (fo=1, routed)           1.379     2.325    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/rd_data[20]
+    SLICE_X65Y70         LUT3 (Prop_D6LUT_SLICEL_I2_O)
+                                                      0.146     2.471 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_155__38/O
+                         net (fo=3, routed)           0.163     2.634    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_155__38_n_0
+    SLICE_X65Y66         LUT5 (Prop_A6LUT_SLICEL_I1_O)
+                                                      0.124     2.758 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_197__38/O
+                         net (fo=3, routed)           0.119     2.877    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_197__38_n_0
+    SLICE_X65Y66         LUT5 (Prop_D5LUT_SLICEL_I2_O)
+                                                      0.157     3.034 f  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_147__38/O
+                         net (fo=10, routed)          1.190     4.224    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/ram_reg_bram_0_i_147__38_n_0
+    SLICE_X92Y71         LUT6 (Prop_D6LUT_SLICEL_I0_O)
+                                                      0.099     4.323 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_26/O
+                         net (fo=1, routed)           0.009     4.332    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_26_n_0
+    SLICE_X92Y71         MUXF7 (Prop_F7MUX_CD_SLICEL_I0_O)
+                                                      0.063     4.395 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[11].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_11/O
+                         net (fo=1, routed)           1.292     5.687    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[27].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_0
+    SLICE_X62Y65         LUT6 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.124     5.811 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[27].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0_i_3/O
+                         net (fo=1, routed)           0.295     6.106    u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[59].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata_0_sn_1
+    SLICE_X62Y65         LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.050     6.156 r  u_Hybrid_LHT_Accumulator/u_Accumulator_with_Switches/GEN_LABEL[59].u_Accumulator/u_Block_RAM/u_Simple_Dual_Port_RAM_Generator/u_simple_ram_0/m_axis_tdata[0]_INST_0/O
+                         net (fo=0)                   0.000     6.156    m_axis_tdata[0]
+                                                                      r  m_axis_tdata[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 delayMatch_reg_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            m_axis_tvalid
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.039ns  (logic 0.039ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.013     0.013    clk
+    SLICE_X56Y114        FDCE                                         r  delayMatch_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y114        FDCE (Prop_EFF2_SLICEM_C_Q)
+                                                      0.039     0.052 r  delayMatch_reg_reg[1]/Q
+                         net (fo=0)                   0.000     0.052    m_axis_tvalid
+                                                                      r  m_axis_tvalid (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 delayMatch_reg_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            m_axis_tvalid
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.039ns  (logic 0.039ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.013     0.013    clk
+    SLICE_X56Y114        FDCE                                         r  delayMatch_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y114        FDCE (Prop_EFF2_SLICEM_C_Q)
+                                                      0.039     0.052 f  delayMatch_reg_reg[1]/Q
+                         net (fo=0)                   0.000     0.052    m_axis_tvalid
+                                                                      f  m_axis_tvalid (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 delayMatch1_reg_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Destination:            m_axis_tlast
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.040ns  (logic 0.040ns (100.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.013     0.013    clk
+    SLICE_X55Y116        FDCE                                         r  delayMatch1_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y116        FDCE (Prop_EFF2_SLICEL_C_Q)
+                                                      0.040     0.053 r  delayMatch1_reg_reg[1]/Q
+                         net (fo=0)                   0.000     0.053    m_axis_tlast
+                                                                      r  m_axis_tlast (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  MWCLK
+
+Max Delay         17132 Endpoints
+Min Delay         17132 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 s_axis_tdata[7]
+                            (input port)
+  Destination:            u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/D
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.360ns  (logic 0.486ns (9.067%)  route 4.874ns (90.933%))
+  Logic Levels:           4  (LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  s_axis_tdata[7] (IN)
+                         net (fo=147, unset)          0.000     0.000    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/s_axis_tdata[7]
+    SLICE_X86Y78         LUT6 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.148     0.148 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/delayMatch_1_reg_6[0][4]_i_1/O
+                         net (fo=50, routed)          2.066     2.214    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/s_axis_tdata[2]_1[2]
+    SLICE_X65Y136        LUT4 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.090     2.304 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/delayMatch_1_reg_9[0][4]_i_1/O
+                         net (fo=46, routed)          2.438     4.742    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Get_Index_and_Fix_Limits_out1[9]_110[2]
+    SLICE_X63Y124        LUT6 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     4.865 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_2/O
+                         net (fo=1, routed)           0.312     5.177    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_2_n_0
+    SLICE_X63Y124        LUT5 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.125     5.302 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_1/O
+                         net (fo=1, routed)           0.058     5.360    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][15]_0[3]
+    SLICE_X63Y124        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.021     0.021    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/clk
+    SLICE_X63Y124        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/C
+
+Slack:                    inf
+  Source:                 s_axis_tdata[7]
+                            (input port)
+  Destination:            u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/D
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.360ns  (logic 0.486ns (9.067%)  route 4.874ns (90.933%))
+  Logic Levels:           4  (LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  s_axis_tdata[7] (IN)
+                         net (fo=147, unset)          0.000     0.000    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/s_axis_tdata[7]
+    SLICE_X86Y78         LUT6 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.148     0.148 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/delayMatch_1_reg_6[0][4]_i_1/O
+                         net (fo=50, routed)          2.066     2.214    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/s_axis_tdata[2]_1[2]
+    SLICE_X65Y136        LUT4 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.090     2.304 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/delayMatch_1_reg_9[0][4]_i_1/O
+                         net (fo=46, routed)          2.438     4.742    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Get_Index_and_Fix_Limits_out1[9]_110[2]
+    SLICE_X63Y124        LUT6 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     4.865 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_2/O
+                         net (fo=1, routed)           0.312     5.177    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_2_n_0
+    SLICE_X63Y124        LUT5 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.125     5.302 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_1/O
+                         net (fo=1, routed)           0.058     5.360    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][15]_0[3]
+    SLICE_X63Y124        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.021     0.021    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/clk
+    SLICE_X63Y124        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/C
+
+Slack:                    inf
+  Source:                 s_axis_tdata[7]
+                            (input port)
+  Destination:            u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/D
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        5.360ns  (logic 0.486ns (9.067%)  route 4.874ns (90.933%))
+  Logic Levels:           4  (LUT4=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        0.021ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  s_axis_tdata[7] (IN)
+                         net (fo=147, unset)          0.000     0.000    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/s_axis_tdata[7]
+    SLICE_X86Y78         LUT6 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.148     0.148 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/delayMatch_1_reg_6[0][4]_i_1/O
+                         net (fo=50, routed)          2.066     2.214    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/s_axis_tdata[2]_1[2]
+    SLICE_X65Y136        LUT4 (Prop_H6LUT_SLICEL_I3_O)
+                                                      0.090     2.304 f  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/delayMatch_1_reg_9[0][4]_i_1/O
+                         net (fo=46, routed)          2.438     4.742    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Get_Index_and_Fix_Limits_out1[9]_110[2]
+    SLICE_X63Y124        LUT6 (Prop_C6LUT_SLICEM_I1_O)
+                                                      0.123     4.865 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_2/O
+                         net (fo=1, routed)           0.312     5.177    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_2_n_0
+    SLICE_X63Y124        LUT5 (Prop_H6LUT_SLICEM_I0_O)
+                                                      0.125     5.302 r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Get_Index_and_Fix_Limits/Selector_out1_60[9][3]_i_1/O
+                         net (fo=1, routed)           0.058     5.360    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][15]_0[3]
+    SLICE_X63Y124        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.021     0.021    u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/clk
+    SLICE_X63Y124        FDCE                                         r  u_Hybrid_LHT_Kernel/u_Gradient_Kernel_System/u_Hough_Kernel/u_Hough_Kernel/Selector_out1_60_reg[9][3]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/CE
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Slow Process Corner)
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.030ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.030ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+    SLICE_X104Y175       FDCE                                         r  Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.030     0.030    clk
+    SLICE_X104Y175       FDCE                                         r  Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/CE
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Slow Process Corner)
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.030ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.030ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+    SLICE_X104Y175       FDCE                                         r  Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.030     0.030    clk
+    SLICE_X104Y175       FDCE                                         r  Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/CE
+                            (rising edge-triggered cell FDCE clocked by MWCLK  {rise@0.000ns fall@4.167ns period=8.333ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.019ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.019ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=6444, unset)         0.000     0.000    clk_enable
+    SLICE_X104Y175       FDCE                                         r  Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=8170, unset)         0.019     0.019    clk
+    SLICE_X104Y175       FDCE                                         r  Unit_Delay_Enabled_Synchronous_out1_reg[8]_i_5/C
+
+
+
+
+
