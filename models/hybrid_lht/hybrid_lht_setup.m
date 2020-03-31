@@ -37,7 +37,7 @@ end
 % Set input image
 bt.inputImage = (bitconcat(fi(edge, 0, 1, 0), fi(Gdir, 0, ceil(log2(bt.nTheta)), 0)));
 
-if strcmp(bdroot, 'hybrid_lht_accumulator')
+if strcmp(bdroot, 'hybrid_lht')
     % Squash some bugs and override the model (still messy)
     set_param([bdroot, '/Hybrid LHT/Hybrid LHT Accumulator/Accumulator with Switches/Accumulator/Block RAM/Simple Dual Port RAM Generator'],...
         'd', int2str(bt.nRho));
